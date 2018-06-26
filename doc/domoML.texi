@@ -1,0 +1,198 @@
+@c ----------------------------------------------------------------------------
+@c %**start of DomoML
+@c ----------------------------------------------------------------------------
+
+@menu
+* DomoML::      The XML language created and used inside the application
+@end menu
+
+@node DomoML
+@chapter DomoML
+
+@section What @emph{domoML} is and what it does
+
+@indicize{domoML} is a subset of the @indicize{XML} language and it used as @keyWord{lingua franca} abstracting the underlying technologies of devices in a way to level out them. In this way devices, functions and interactions inside the @keyWord{domoNet middleware} are represented using an unique representation. It's the standardized language by and towards which translate @indicize{techLanguages} for the proper functioning of the middleware. Infact, all the logical parts of the middeware use @indicize{domoML} and only the physical iterations between real devices and @indicize{techManagers} are in the @indicize{techLanguage}.
+@keyWord{domoML} is composed by two sub-languages:
+
+@itemize @bullet
+@item @keyWord{domoDevice}: describes and creates the 
+abstraction of the devices;
+@item @keyWord{domoMessage}: describes iterations from and to devices.
+@end itemize
+
+@subsection @keyWord{domoDevice}
+The @keyWord{domoDevice} sub-language has the purpose to create a compact, effective, simple and complete way to represent devices abstracting them from the underlining domotic technology.
+ 
+@keyWord{domoDevice} can be represented through a wide and poorly deeper tree. The tree can have maximum four levels: 
+
+@enumerate
+@item @indicize{device}: opens the @keyWord{domoDevice} description and gives general informations
+about the device as follow:
+@itemize @bullet
+@item @indicize{description}: a natural language description for the device;
+@item @indicize{id}: is a value used for take and generate the @indicize{domoDeviceId}.
+It identifies the @keyWord{domoDevice} inside the @keyWord{Web Service};
+@item @indicize{manufacturer}: the manufacturer of the device; 
+@item @indicize{positionDescription}: a natural language description of the location
+of the device.
+@item @indicize{serialNumber}: the serial number (it can be composed by letters too) of
+the device.
+@item @indicize{tech}: the technology of the original device represented;
+@item @indicize{type}: the typology of the device;
+@item @indicize{URL}: is a value used for take and generate the @indicize{domoDeviceId}.
+It identifies the @keyWord{web service} that has the device.
+@end itemize
+
+All this fields are optional except for the @keyWord{id}, @keyWord{URL} and @keyWord{tech} attributes
+because they permit to identify and use the device.
+
+@item @indicize{service}: describes a service offered of the @keyWord{domoDevice}. This
+information is used to create a @keyWord{domoMessage} and to converting it to
+a @keyWord{techMessage}.
+For each @keyWord{domoDevice} there can be more than one @keyWord{service} tags.
+Tags for this are:
+@itemize @bullet
+@item @indicize{description}: a natural language description for the @indicize{service};
+@item @indicize{name}: an identifier that can be useful when a @keyWord{domoMessage} the will be
+generated and translated to @keyWord{techMessage};
+@item @indicize{output}: the datatype expected as return value when the service is invoked. This attribute must not be placed if no return value is provided. 
+@item @indicize{outputDescription}: a natural language description for the @emph{output}
+attribute. If no @emph{output} attribute is provided this attribute must not be
+placed;
+@item @indicize{prettyName}: a label for the service using natural language; 
+@end itemize
+@item two possible ones tag for this level:
+@itemize @bullet
+@item @indicize{input}: describes an input for the service. This tag is optional and can be repeated as many times as needed. The attributes for this tag are:
+This tag is optional and may have more input.
+The fields for this are:
+@itemize @minus
+@item @indicize{name}: identify the input;
+@item @indicize{description}: a description of the input;
+@item @indicize{type}: the datatype of the expected input;
+@end itemize
+@item @indicize{linkedService}: describes an interoperability action. This tag permits to invoke a service of another @keyWord{domoDevice} sharing states. This tag is optional. Its attributes are: 
+@itemize @minus
+@item @indicize{URL}: the url of the @keyWord{web service} that manages the involved @keyWord{domoDevice} that owns the @indicize{service} to call;
+@item @indicize{id}: the identifier inside the specified @keyWord{web service} of the involved @indicize{domoDevice} that owns the @indicize{service} to call;
+@item @indicize{service}: the name of the service to tie in the previous characterized @keyWord{domcoDevice} to connect;
+@item @indicize{ifInput}: the condition to be verified by the input of the @indicize{service} described. If the input name has value as specified in @keyWord{hasValue} attribute, the service of the involved @indicize{domoDevice} is called;
+@item @indicize{hasValue}: used with @keyWord{ifInput} attribute. It specifies the value to be matched in order to call the service of the @keyWord{linkedService};
+@end itemize
+@end itemize
+
+@item two possible tags for this level:
+@itemize @bullet
+@item @indicize{allowed}: if the previous tag was @keyWord{input}. It represents a possible value that can assume the input.
+This is an optional parameter and each @keyWord{input} may have more than one @keyWord{allowed} tags.
+The only attribute for this tag is:
+@itemize @minus
+@item @indicize{value}: the allowed value.
+@end itemize
+@item @indicize{linkedInput}: if the previous tag was @keyWord{linkedService}.
+It represents the association of a input of this service with one input of the service to recall.
+Every input of the service to recall must have an association.
+It permits to share the value of an input of the described service with an input of the service to call. Attributes for this tag are: 
+@itemize @minus
+@item @indicize{from}: tthe name of the input of the described service from which take the value;
+@item @indicize{to}: the name of the input of the service to call; 
+@item @indicize{value}: used alternatively to the @keyWord{from} attribute, it specifies the value to be set for the input named in the @keyWord{to} attribute. 
+@end itemize
+@end itemize
+@end enumerate
+
+An example of a @keyWord{DomoDevice} for a lamp:
+
+@float Example,ex:ex1
+@example
+<device description="energetic saving lamp"
+ id="0" manufacturer="pholips"
+ postionDescription="on the bedside table beside the bed"
+ serialNumber="xxxxxxxxx" tech="KNX" type="lamp"
+ url="http://www.thiswebservice.it/service">
+ <service description="Get the status"
+  output="BOOLEAN" outputDescription="The value"
+  name="GET_STATUS" prettyName="Get status" />
+ <service description="Set the status"
+  name="SET_STATUS" prettyName="Set status">
+  <input description="The value" name="status"
+   type="BOOLEAN">
+   <allowed value="TRUE" />
+   <allowed value="FALSE" />
+  </input>
+  <linkedService id="3" service="setPower"
+   url="http://www.otherwebservice.it/service">
+   <linkedInput from="status" to="power" />
+  </linkedService>
+ </service>
+</device>
+@end example
+@caption{A @keyWord{domoDevice} example for a lamp.}
+@end float
+
+In @ref{ex:ex1} is described a @keyWord{domoDevice} lamp produced by “pholips” and that it is located bedside table beside the bed. It’s of the @keyWord{KNX} technology and is of type @keyWord{lamp}. The lamp is managed by the @keyWord{web service} @keyWord{http://www.thiswebservice.it/service}.
+The lamp offers two services: to get and set its state using a boolean value. The boolean value can be @keyWord{TRUE} or @keyWord{FALSE}.
+When is invoked the service to set status, it is also called the service named @keyWord{setPower} of the @keyWord{domoDevice} managed from the @keyWord{web service} @keyWord{http://www.otherwebservice.it/service} with @keyWord{id} @keyWord{3}.
+The value used as input for the described service (@keyWord{status}) is also used as input value for the service to call (@keyWord{power}).
+This means that if it it is invoked the service @keyWord{setStatus} of the @keyWord{domoDevice} with @keyWord{url} @keyWord{http://www.thiswebservice.it/service"} and with @keyWord{id} @keyWord{0} using as input the value @keyWord{TRUE}, it is also called the service @keyWord{setPower} of the @keyWord{domoDevice} with @keyWord{url} @keyWord{http://www.otherwebservice.it/service}, and with @keyWord{id} @keyWord{3} using as input the same value.
+
+@subsection @keyWord{domoMessage}
+	
+The @indicize{domoMessage} sub-language has the role to create a simple, compact and effective mechanism to represent the interactions between the @keyWord{domoDevice} without take care about underlining technologies.
+@keyWord{domoMessage} is also represented through a wide and little deep tree with maximum 2 levels: 
+@enumerate
+@item @indicize{message}: it opens the tag that it describes the @keyWord{domoMessage} and it contains the following attributes:
+@itemize @bullet
+@item @indicize{message}: the body of the message, typically the name of the service to call;
+@item @indicize{messageType}: the type of message. It can be:
+@itemize @minus
+@item @indicize{COMMAND}: if it is be a  service to execute;
+@item @indicize{SUCCESS}: it is used as response of a @keyWord{COMMAND} message. It reports the success of the call. In this case the attribute @keyWord{message} can contain value of the answer of the execution of the service;
+@item @indicize{FAILURE}: it is used as response of a @keyWord{COMMAND} message. It reports the failure of the call. In this case the attribute message can contain error code;
+@item @indicize{UPDATE}: it’s a notification of the change of the state of a value of an @keyWord{input} of a @keyWord{service} of a @keyWord{domoDevice}. 
+@end itemize	 
+@item @indicize{receiverId}: the identifier of the receiving @keyWord{domoDevice} of the message;
+@item @indicize{receiverURL}: the @keyWord{URL} of the @keyWord{web service} that contains the @keyWord{domoDevice} requested;
+@item @indicize{senderId}: the identifier of the sender @keyWord{domoDevice} of the message;
+@item @indicize{senderURL}: the @keyWord{URL} of the web service that contains the @keyWord{domoDevice} that sendes the message;
+@end itemize
+@item @indicize{input}: if message type is @keyWord{COMMAND}, it represents a value to be sent as input of the service to call. Otherwise, if message type is @keyWord{UPDATE}, it represents a new value of the state of a device. This tag is optional and every tag message can have more @keyWord{input} tag. The attributes for this tag are:
+@itemize @bullet
+@item @indicize{name}: the name of the @keyWord{input};
+@item @indicize{type}: the data type of the @keyWord{input};
+@item @indicize{value}: the value of the @keyWord{input};
+@end itemize
+@end enumerate
+
+An example of @keyWord{domoMessage} in order to turn on one simple lamp is:
+
+@float Example,ex:ex2
+@example
+<message message="SET_STATUS" messageType="COMMAND"
+ receiverId="1"
+ receiverURL="http://www.otherwebservice.it/service"
+ senderId="0"
+ senderURL="http://www.thiswebservice.it/service">
+ <input name="status" type="BOOLEAN"
+  value="TRUE" />
+</message>
+@end example
+@caption{A @keyWord{domoMessage} example for request a service.}
+@end float
+
+This example shows how to execute the service @keyWord{SET_STATUS} on the @keyWord{domoDevice} with web service @keyWord{http://www.thiswebservice.it/service} and @keyWord{id} @keyWord{1}. The service has an @keyWord{input} of type @keyWord{boolean} with value @keyWord{TRUE}. After the execution of the called service, if no errors was found, the middleware creates a @keyWord{message} of type @keyWord{SUCCESS}:
+
+@float Example,ex:ex3
+@example
+<message message="TRUE" messageType="SUCCESS"
+ receiverURL="http://www.thiswebservice.it/service"
+ receiverId="0" senderId="1"
+ senderURL="http://www.otherwebservice.it/service" />
+@end example
+@caption{A response @keyWord{domoMessage} example.}
+@end float
+
+
+@c ----------------------------------------------------------------------------
+@c %**end of DomoML
+@c ----------------------------------------------------------------------------

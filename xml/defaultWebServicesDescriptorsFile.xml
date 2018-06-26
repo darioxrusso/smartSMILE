@@ -1,0 +1,5 @@
+<webServicesDescriptors>
+
+  <webServicesDescriptor url="http://localhost:8080/axis/services/DomoNetWS" description="Un web services locale di prova."/>
+
+</webServicesDescriptors>

@@ -1,0 +1,40 @@
+@c ----------------------------------------------------------------------------
+@c %**start of Client Side
+@c ----------------------------------------------------------------------------
+
+@menu
+* Client side::         The client side of the application
+@end menu
+
+@node Client side
+@chapter Client side
+The client side is composed by two elements: the @keyWord{domoNetClient} and the @keyWord{domoNetClientUI}.
+Followint the @keyWord{MVC} (Model View Controller) paradigm, @keyWord{domoNetClient} implements the Model and Controller part whereas @keyWord{domoNetClientUI} implements the View part. 
+The @keyWord{domoNetClient} is an application to interact with one or more @keyWord{DomoNetWS}s. It implements the necessary functions to manage and to get data to implement services to control devices.
+
+@float Figure,fig:dncu1
+@center @image{images/domoNetClientUIArchitecture,400pt,,,jpg}
+@caption{The domoNetClientUI (client side) architecture}
+@end float
+
+@keyWord{domoNetClient} (@ref{fig:dncu1}) can get the list of 
+@keyWord{domoDevices} that are available in the @keyWord{DomoNetWS}s 
+@code{getDeviceList} function. 
+@keyWord{DomoDevice}s are stored in the @code{DomoDeviceList} structure. 
+@keyWord{DomoNetClient} is able to create and to send @keyWord{domoMessage} 
+commands exploiting the descriptions provided in @keyWord{domoDevice}s.
+To do that, @keyWord{DomoNetClient} the @code{execute} function. 
+When the @code{output} field of the @keyWord{domoMessage} is not empty, 
+@keyWord{DomoNetClient} waits for a response form the @keyWord{DomoNetWS} after
+having submitted the request. 
+If needed, @keyWord{DomoNetClient} is able to receive notifications about the 
+change of the state of sensors and actuators that occur in the 
+@keyWord{DomoNetWS}. 
+@keyWord{DomoNetClinetUI}, instead, can be a web or desktop application, 
+or an app for smartphone or tablet. 
+Its function is to offer to users an interface to interact easily with the 
+@keyWord{DomoNetClient} application. 
+
+@c ----------------------------------------------------------------------------
+@c %**end of Client Side
+@c ----------------------------------------------------------------------------

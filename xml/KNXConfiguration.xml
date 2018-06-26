@@ -1,0 +1,3497 @@
+<root>
+
+	<columns>
+<colName nr="1">Principale</colName>
+<colName nr="2">Oggetto</colName>
+<colName nr="3">Dispositivo</colName>
+<colName nr="4">Trasmissione</colName>
+<colName nr="5">ACK (PL)</colName>
+<colName nr="6">C</colName>
+<colName nr="7">R</colName>
+<colName nr="8">W</colName>
+<colName nr="9">T</colName>
+<colName nr="10">U</colName>
+<colName nr="11">Prodotto</colName>
+<colName nr="12">Programma</colName>
+<colName nr="13">Lunghezza</colName>
+<colName nr="14">Priorità</colName>
+<colName nr="15">Indirizzi di gruppo</colName>
+</columns>
+
+	<rows>
+
+	<row>
+<colValue nr="1">0/0/123 Disabilita Allarme da lettore biometrico</colValue>
+<colValue nr="2">10: Input 3 - Switching object 3.2</colValue>
+<colValue nr="3">1.1.5 Push button interface 4-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 4-gang</colValue>
+<colValue nr="12">4 inputs, 2 outputs 705701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/123</colValue>
+</row>
+
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">11: Input 4 - Switching object 4.2</colValue>
+<colValue nr="3">1.1.5 Push button interface 4-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 4-gang</colValue>
+<colValue nr="12">4 inputs, 2 outputs 705701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/123</colValue>
+</row>
+−
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">12: Setting/Unsetting - External setting, delayed</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/51, 0/0/123</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">10: Setting/Unsetting - Internal setting/unsetting</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/50, 0/0/123</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/2 Elettroserratura porta ingresso</colValue>
+<colValue nr="2">1: Output 2 - OR connection</colValue>
+<colValue nr="3">1.1.13 BA 8.16 switch actuator</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">BA 8.16 switch actuator</colValue>
+<colValue nr="12">Switch/time/logic/staircase</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/2, 0/0/3, 0/0/4</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/3 Accesso di un estraneo</colValue>
+<colValue nr="2">2: Input 3 - Switching object 3.1</colValue>
+<colValue nr="3">1.1.5 Push button interface 4-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 4-gang</colValue>
+<colValue nr="12">4 inputs, 2 outputs 705701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/3</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: Output 2 - OR connection</colValue>
+<colValue nr="3">1.1.13 BA 8.16 switch actuator</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">BA 8.16 switch actuator</colValue>
+<colValue nr="12">Switch/time/logic/staircase</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/2, 0/0/3, 0/0/4</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/4 Accesso di un familiare</colValue>
+<colValue nr="2">3: Input 4 - Switching object 4.1</colValue>
+<colValue nr="3">1.1.5 Push button interface 4-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 4-gang</colValue>
+<colValue nr="12">4 inputs, 2 outputs 705701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/4</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: Output 2 - OR connection</colValue>
+<colValue nr="3">1.1.13 BA 8.16 switch actuator</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">BA 8.16 switch actuator</colValue>
+<colValue nr="12">Switch/time/logic/staircase</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/2, 0/0/3, 0/0/4</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/5 Pulsante luce ingresso</colValue>
+<colValue nr="2">0: Left rocker - Switch</colValue>
+<colValue nr="3">1.1.6 2-gang push button sensor - switch position</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">2-gang push button sensor - switch position</colValue>
+<colValue nr="12">Value, switch, 1/2 x dimming, shutter 106701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/5</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">0: Output 1 - Switch</colValue>
+<colValue nr="3">1.1.13 BA 8.16 switch actuator</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">BA 8.16 switch actuator</colValue>
+<colValue nr="12">Switch/time/logic/staircase</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/5</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/6 Richiama scenari</colValue>
+<colValue nr="2">1: Right rocker - Valuator</colValue>
+<colValue nr="3">1.1.6 2-gang push button sensor - switch position</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">2-gang push button sensor - switch position</colValue>
+<colValue nr="12">Value, switch, 1/2 x dimming, shutter 106701</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/6</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">8: 1 byte - 1 byte object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/6, 0/0/14, 0/0/18</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: Right rocker - Valuator</colValue>
+<colValue nr="3">1.1.8 2-gang push button sensor - switch position</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">2-gang push button sensor - switch position</colValue>
+<colValue nr="12">Value, switch, 1/2 x dimming, shutter 106701</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/6</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: Input 2 - Light-scene extension</colValue>
+<colValue nr="3">1.1.2 Push button interface 2-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 2-gang</colValue>
+<colValue nr="12">2 inputs, 2 outputs 705801</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/6</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: Right rocker - Valuator</colValue>
+<colValue nr="3">1.1.7 2-gang push button sensor - switch position</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">2-gang push button sensor - switch position</colValue>
+<colValue nr="12">Value, switch, 1/2 x dimming, shutter 106701</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/6</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/7 Presa comandata TV sala</colValue>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">36: Output 2 - Switching</colValue>
+<colValue nr="3">1.1.11 4-gang switch actuator 16A SE</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">4-gang switch actuator 16A SE</colValue>
+<colValue nr="12">Switching with ack., logic link, time func. 209011</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/7</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/8 Avvisatore acustico luminoso</colValue>
+<colValue nr="2">10: Output 1 - Switching</colValue>
+<colValue nr="3">1.1.11 4-gang switch actuator 16A SE</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">4-gang switch actuator 16A SE</colValue>
+<colValue nr="12">Switching with ack., logic link, time func. 209011</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/8</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/9 Led percorso luminoso</colValue>
+<colValue nr="2">10: Output 1 - Switching</colValue>
+<colValue nr="3">1.1.12 4-gang switch actuator 16A SE</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">4-gang switch actuator 16A SE</colValue>
+<colValue nr="12">Switching with ack., logic link, time func. 209011</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/9</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">0: Left rocker - Switch</colValue>
+<colValue nr="3">1.1.8 2-gang push button sensor - switch position</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">2-gang push button sensor - switch position</colValue>
+<colValue nr="12">Value, switch, 1/2 x dimming, shutter 106701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/9</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">6: channel 4 - switching</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/9</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/12 On/Off Presa comandata sala</colValue>
+<colValue nr="2">0: Output - Switching</colValue>
+<colValue nr="3">1.1.9 Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="12">Dimming, 2 x Inputs 301901</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/12, 0/0/120</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">2: channel 2 - dimming: switching</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/12</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">0: Left rocker - Switch</colValue>
+<colValue nr="3">1.1.7 2-gang push button sensor - switch position</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">2-gang push button sensor - switch position</colValue>
+<colValue nr="12">Value, switch, 1/2 x dimming, shutter 106701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/12, 0/0/120</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/13 Dim Presa comandata sala</colValue>
+<colValue nr="2">3: Output - Dimming</colValue>
+<colValue nr="3">1.1.9 Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="12">Dimming, 2 x Inputs 301901</colValue>
+<colValue nr="13">4 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/13</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">3: channel 2 - dimming: dimming</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">4 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/13</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">2: Left rocker - Dimming</colValue>
+<colValue nr="3">1.1.7 2-gang push button sensor - switch position</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">2-gang push button sensor - switch position</colValue>
+<colValue nr="12">Value, switch, 1/2 x dimming, shutter 106701</colValue>
+<colValue nr="13">4 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/13</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/14 Set Presa comandata sala</colValue>
+<colValue nr="2">4: Output - Brightness value</colValue>
+<colValue nr="3">1.1.9 Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="12">Dimming, 2 x Inputs 301901</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/14</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">8: 1 byte - 1 byte object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/6, 0/0/14, 0/0/18</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/15 Disabilita accesso estranei</colValue>
+<colValue nr="2">0: channel 1 - switching</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/15</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">18: Input 3 - Disabling</colValue>
+<colValue nr="3">1.1.5 Push button interface 4-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 4-gang</colValue>
+<colValue nr="12">4 inputs, 2 outputs 705701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/15</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">0: Output 1 - Switching</colValue>
+<colValue nr="3">1.1.5 Push button interface 4-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 4-gang</colValue>
+<colValue nr="12">4 inputs, 2 outputs 705701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/15</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/16 On/Off Presa comandata camera</colValue>
+<colValue nr="2">0: Output - Switching</colValue>
+<colValue nr="3">1.1.10 Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="12">Dimming, 2 x Inputs 301901</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/16</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">4: channel 3 - dimming: switching</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/16</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">0: Input 1 - Switching</colValue>
+<colValue nr="3">1.1.2 Push button interface 2-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 2-gang</colValue>
+<colValue nr="12">2 inputs, 2 outputs 705801</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/16</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/17 Dim Presa comandata camera</colValue>
+<colValue nr="2">3: Output - Dimming</colValue>
+<colValue nr="3">1.1.10 Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="12">Dimming, 2 x Inputs 301901</colValue>
+<colValue nr="13">4 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/17</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">5: channel 3 - dimming: dimming</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">4 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/17</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">8: Input 1 - Dimming</colValue>
+<colValue nr="3">1.1.2 Push button interface 2-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 2-gang</colValue>
+<colValue nr="12">2 inputs, 2 outputs 705801</colValue>
+<colValue nr="13">4 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/17</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/18 Set Presa comandata camera</colValue>
+<colValue nr="2">4: Output - Brightness value</colValue>
+<colValue nr="3">1.1.10 Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="12">Dimming, 2 x Inputs 301901</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/18</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">8: 1 byte - 1 byte object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/6, 0/0/14, 0/0/18</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/19 Contatto magnetico finestra soggiorno</colValue>
+<colValue nr="2">0: Input 1 - Switching object 1.1</colValue>
+<colValue nr="3">1.1.1 Push button interface 2-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 2-gang</colValue>
+<colValue nr="12">2 inputs, 2 outputs 705801</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/19</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">44: Detector input 1 - Input telegram</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/19</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/20 Temperatura attuale soggiorno</colValue>
+<colValue nr="2">23: Output - Actual temperature</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">2 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/20</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">9: 2 byte - 2 byte object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">2 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/20, 0/0/27</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/21 Basic Setpoint</colValue>
+<colValue nr="2">26: Input - Basis-Sollwert</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">2 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/21</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/24 Window status</colValue>
+<colValue nr="2">34: Input - Window status</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/24</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/25 Controller status</colValue>
+<colValue nr="2">36: Output - Controller status</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/25</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/26 Actuating variable heating</colValue>
+<colValue nr="2">42: Output - Actuating variable heating</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/26</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">0: Grandezza regolatrice - Avviare la posizione</colValue>
+<colValue nr="3">1.1.18 Cheops drive</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Cheops drive</colValue>
+<colValue nr="12">Cheops drive V1.1</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/26</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/27 Send setpoint temperature</colValue>
+<colValue nr="2">50: Output - Setpoint temperature</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">2 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/27</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">9: 2 byte - 2 byte object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">2 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/20, 0/0/27</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/28 Send setpoint shift feedback</colValue>
+<colValue nr="2">52: Output - Setpoint shift feedback</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/28</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/29 Setpoint shift preset</colValue>
+<colValue nr="2">53: Input - Setpoint shift preset</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/29</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/30 Status report add. stage</colValue>
+<colValue nr="2">57: Output - Status report additional stage</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/30</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/31 Send actual temp. non adj</colValue>
+<colValue nr="2">58: Output - Actual temp. not adjusted</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">2 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/31</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/32 Heating message</colValue>
+<colValue nr="2">37: Output - Heating message</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/32</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/33 IR Out 1</colValue>
+<colValue nr="2">0: output 1 - Switching</colValue>
+<colValue nr="3">1.1.24 Presence detector G491'Komfort'</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Presence detector G491'Komfort'</colValue>
+<colValue nr="12">Presence Komfort A00F01</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/33</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/34 IR Out 3</colValue>
+<colValue nr="2">2: output 3 - Switching</colValue>
+<colValue nr="3">1.1.24 Presence detector G491'Komfort'</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Presence detector G491'Komfort'</colValue>
+<colValue nr="12">Presence Komfort A00F01</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/34</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/35 IR Mode change-over</colValue>
+<colValue nr="2">5: Mode - Mode-of-operation change-over</colValue>
+<colValue nr="3">1.1.24 Presence detector G491'Komfort'</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Presence detector G491'Komfort'</colValue>
+<colValue nr="12">Presence Komfort A00F01</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/35</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/36 IR Bright. in(dep) detect</colValue>
+ 
+	<colValue nr="2">
+10: Twilight level - Brightness-(in)dependent detec
+</colValue>
+<colValue nr="3">1.1.24 Presence detector G491'Komfort'</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Presence detector G491'Komfort'</colValue>
+<colValue nr="12">Presence Komfort A00F01</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/36</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/37 IR Alarm</colValue>
+<colValue nr="2">11: Alarm - Switching</colValue>
+<colValue nr="3">1.1.24 Presence detector G491'Komfort'</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Presence detector G491'Komfort'</colValue>
+<colValue nr="12">Presence Komfort A00F01</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/37</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/38 Water </colValue>
+<colValue nr="2">0: Water - Yes / No</colValue>
+<colValue nr="3">1.1.20 Water detector UP 270 / 271 / 272</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Water detector UP 270 / 271 / 272</colValue>
+<colValue nr="12">12 S1 Water detector  211701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/38</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/39 Water Alarm</colValue>
+<colValue nr="2">1: Water alarm - Yes / No</colValue>
+<colValue nr="3">1.1.20 Water detector UP 270 / 271 / 272</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Water detector UP 270 / 271 / 272</colValue>
+<colValue nr="12">12 S1 Water detector  211701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/39</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/40 Water sensor defective</colValue>
+<colValue nr="2">2: Device / cable defective - Yes / No</colValue>
+<colValue nr="3">1.1.20 Water detector UP 270 / 271 / 272</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Water detector UP 270 / 271 / 272</colValue>
+<colValue nr="12">12 S1 Water detector  211701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/40</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/41 Water alarm reset</colValue>
+<colValue nr="2">3: Alarm acknowledgement - Reset alarm</colValue>
+<colValue nr="3">1.1.20 Water detector UP 270 / 271 / 272</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Water detector UP 270 / 271 / 272</colValue>
+<colValue nr="12">12 S1 Water detector  211701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/41</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/50 Alarm Internal set/unset</colValue>
+<colValue nr="2">10: Setting/Unsetting - Internal setting/unsetting</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/50, 0/0/123</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/51 Alarm External set/unset</colValue>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">12: Setting/Unsetting - External setting, delayed</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/51, 0/0/123</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/52 Alarm Enable set/unset</colValue>
+<colValue nr="2">14: Setting/Unsetting - Enable setting/unsetting</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/52</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/53 Alarm Status externally set</colValue>
+<colValue nr="2">15: Setting/Unsetting - Status externally set</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/53</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/54 Alarm Status internally set</colValue>
+<colValue nr="2">16: Setting/Unsetting - Status internally set</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/54</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/55 Alarm Status ext. or int. set</colValue>
+<colValue nr="2">17: Setting/Unsetting - Status ext. or int. set</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/55</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/56 Alarm Status Ready for ext. set.</colValue>
+ 
+	<colValue nr="2">
+18: Setting/Unsetting - Status ready for ext. setting
+</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/56</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/57 Alarm Status Ready for int. set.</colValue>
+ 
+	<colValue nr="2">
+20: Setting/Unsetting - Status ready for int. setting
+</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/57</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/58 Alarm Setting confirmation</colValue>
+<colValue nr="2">21: Setting/Unsetting - Setting confirmation</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/58</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/59 Alarm Error during setting</colValue>
+<colValue nr="2">22: Setting/Unsetting - Error during setting</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/59</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/60 Alarm Ext. strobe light</colValue>
+<colValue nr="2">24: Alarming - External strobe light</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/60</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/61 Alarm External siren</colValue>
+<colValue nr="2">25: Alarming - External siren</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/61</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/62 Alarm Internal siren</colValue>
+<colValue nr="2">26: Alarming - Internal siren</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/62</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/63 Alarm Telegram intrusion alarm</colValue>
+<colValue nr="2">27: Alarming - Telegr. intrusion alarm</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/63</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/64 Alarm Telegram tech. alarm1</colValue>
+<colValue nr="2">28: Alarming - Telegr. technical alarm 1</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/64</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/65 Alarm Telegram tech. alarm2</colValue>
+<colValue nr="2">29: Alarming - Telegr. technical alarm 2</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/65</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/66 Alarm Telegram panic alarm</colValue>
+<colValue nr="2">30: Alarming - Telegr. panic alarm</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/66</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/67 Alarm Telegram tamper alarm</colValue>
+<colValue nr="2">31: Alarming - Telegr. tamper alarm</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/67</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/68 Alarm Telegram fault alarm</colValue>
+<colValue nr="2">32: Alarming - Telegr. fault</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/68</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/69 Alarm Reset</colValue>
+<colValue nr="2">35: Alarming - Reset</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/69</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/70 Alarm Status Reset</colValue>
+<colValue nr="2">37: Alarming - Status reset</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/70</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/71 Alarm Buzzer</colValue>
+<colValue nr="2">141: Buzzer - Switch on/off</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/71</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">13: Setting/Unsetting - Delay time is active</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/71</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/72 Alarm Relay output</colValue>
+<colValue nr="2">142: Relay output - Switch</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/72</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/73 Alarm Memory open event list</colValue>
+<colValue nr="2">3: Event list memory - Open event list memory</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/73</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/74 Alarm Memory read up/down</colValue>
+<colValue nr="2">4: Event list memory - Read up/down</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/74</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/75 Alarm Memory text name of event</colValue>
+<colValue nr="2">5: Event list memory - Text name of event</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">14 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/75</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/76 Alarm Memory text name of detect.</colValue>
+<colValue nr="2">6: Event list memory - Text name of detector</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">14 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/76</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/77 Alarm Memory Text date/time</colValue>
+<colValue nr="2">7: Event list memory - Text date/time</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">14 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/77</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/78 Alarm Read list triggered detect.</colValue>
+ 
+	<colValue nr="2">
+8: Detector surveillance - Read list of triggered detecto
+</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/78</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/79 Alarm Text triggered detector</colValue>
+<colValue nr="2">9: Detector surveillance - Text triggered detector</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">14 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/79</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/80 Alarm Text setting status</colValue>
+<colValue nr="2">23: Setting/Unsetting - Text setting status</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">14 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/80</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">15: 14 byte - 14 byte object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">14 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/80</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/81 Alarm Text name of alarm</colValue>
+<colValue nr="2">33: Alarming - Text name of alarm</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">14 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/81</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/82 Alarm Text alarming detector</colValue>
+<colValue nr="2">34: Alarming - Text alarming detector</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">14 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/82</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/90 Pulsante attivazione piano cottura</colValue>
+<colValue nr="2">0: Digital In LOGO! (I1) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/90</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/91 Rivelatore di fumo</colValue>
+<colValue nr="2">1: Digital In LOGO! (I2) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/91</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/92 Rivelatore di gas</colValue>
+<colValue nr="2">2: Digital In LOGO! (I3) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/92</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/93 Interruttore forno elettrico</colValue>
+<colValue nr="2">3: Digital In LOGO! (I4) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/93</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/94 Interruttore forno microonde</colValue>
+<colValue nr="2">4: Digital In LOGO! (I5) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/94</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/95 LOGO I6</colValue>
+<colValue nr="2">5: Digital In LOGO! (I6) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/95</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/96 LOGO I7</colValue>
+<colValue nr="2">6: Digital In LOGO! (I7) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/96</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/97 LOGO I8</colValue>
+<colValue nr="2">7: Digital In LOGO! (I8) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/97</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/98 Elettrovalvola gas</colValue>
+<colValue nr="2">24: Digital Out LOGO! (Q1) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/98</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/99 Avviso ottico/acust. piano cottura</colValue>
+<colValue nr="2">25: Digital Out LOGO! (Q2) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/99</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/100 Forno elettrico</colValue>
+<colValue nr="2">26: Digital Out LOGO! (Q3) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/100</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/101 Forno microonde</colValue>
+<colValue nr="2">27: Digital Out LOGO! (Q4) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/101</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/102 Disabilita carico forno elettrico</colValue>
+<colValue nr="2">8: Digital Input (I9) - Input</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/102</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/103 Disabilita carico forno microonde</colValue>
+<colValue nr="2">9: Digital Input (I10) - Input</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/103</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/104 Presa comandata powerline</colValue>
+<colValue nr="2">0: Output A - Swichting</colValue>
+<colValue nr="3">1.2.2 6967 Zwischenstecker-Schaltaktor</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">6967 Zwischenstecker-Schaltaktor</colValue>
+<colValue nr="12">Switch Logic Priority Status Stairc.fct/3</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/104</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">14: channel 8 - switching</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/104</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/105 Allarme tirante bagno</colValue>
+<colValue nr="2">0: Input 1 - Switching object 1.1</colValue>
+<colValue nr="3">1.1.3 Push button interface 2-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 2-gang</colValue>
+<colValue nr="12">2 inputs, 2 outputs 705801</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/105</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/106 Interruttore lavatrice</colValue>
+<colValue nr="2">0: Input 1 - Switching object 1.1</colValue>
+<colValue nr="3">1.1.4 Push button interface 2-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 2-gang</colValue>
+<colValue nr="12">2 inputs, 2 outputs 705801</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/106</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">10: Digital Input (I11) - Input</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/106</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/107 Interruttore scaldabagno</colValue>
+<colValue nr="2">1: Input 2 - Switching object 2.1</colValue>
+<colValue nr="3">1.1.4 Push button interface 2-gang</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Push button interface 2-gang</colValue>
+<colValue nr="12">2 inputs, 2 outputs 705801</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/107</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">12: Digital Input (I13) - Input</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/107</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/108 Termostato modalità comfort</colValue>
+<colValue nr="2">28: Input - Comfort mode</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/108</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/109 Termostato modalità standby</colValue>
+<colValue nr="2">29: Input - Standby mode</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/109</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/110 Termostato modalità notte</colValue>
+<colValue nr="2">30: Input - Nachtbetrieb</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/110</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/111 Termostato modalità antigelo</colValue>
+<colValue nr="2">31: Input - Frost/ heat protection</colValue>
+<colValue nr="3">1.1.16 Continous action controller</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Continous action controller</colValue>
+<colValue nr="12">Continous action controller 705E11</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/111</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/112 Disabilita lavatrice</colValue>
+<colValue nr="2">11: Digital Input (I12) - Input</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/112</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/113 Disabilita scaldabagno</colValue>
+<colValue nr="2">13: Digital Input (I14) - Input </colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/113</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/114 Lavatrice</colValue>
+<colValue nr="2">28: Digital Output EIB (Q5) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/114</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">62: Output 3 - Switching</colValue>
+<colValue nr="3">1.1.12 4-gang switch actuator 16A SE</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">4-gang switch actuator 16A SE</colValue>
+<colValue nr="12">Switching with ack., logic link, time func. 209011</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/114</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/115 Scaldabagno</colValue>
+<colValue nr="2">29: Digital Output EIB (Q6) - Output</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/115</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">36: Output 2 - Switching</colValue>
+<colValue nr="3">1.1.12 4-gang switch actuator 16A SE</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">4-gang switch actuator 16A SE</colValue>
+<colValue nr="12">Switching with ack., logic link, time func. 209011</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/115</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/116 Contatto magnetico ritardato</colValue>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">5: Contatto finestra - Segnalare lo stato finestra</colValue>
+<colValue nr="3">1.1.18 Cheops drive</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Cheops drive</colValue>
+<colValue nr="12">Cheops drive V1.1</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/116</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/119 Sensore IR simulato</colValue>
+<colValue nr="2">8: channel 5 - switching</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/119</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">45: Detector input 2 - Input telegram</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/119</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/120 Accensione luce soggiorno da IR</colValue>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">0: Output - Switching</colValue>
+<colValue nr="3">1.1.9 Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">Universal dimming actuator 1-gang FM </colValue>
+<colValue nr="12">Dimming, 2 x Inputs 301901</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/12, 0/0/120</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">0: Left rocker - Switch</colValue>
+<colValue nr="3">1.1.7 2-gang push button sensor - switch position</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">2-gang push button sensor - switch position</colValue>
+<colValue nr="12">Value, switch, 1/2 x dimming, shutter 106701</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/12, 0/0/120</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/121 Allarme radio 1</colValue>
+<colValue nr="2">10: channel 6 - switching</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/121</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">1: 1 bit - 1 bit object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+ 
+	<colValue nr="15">
+0/0/3, 0/0/2, 0/0/4, 0/0/5, 0/0/7, 0/0/9, 0/0/12, 0/0/15, 0/0/16, 0/0/19, 0/0/39, 0/0/50, 0/0/51, 0/0/53, 0/0/69, 0/0/91, 0/0/92, 0/0/102, 0/0/103, 0/0/104, 0/0/105, 0/0/108, 0/0/109, 0/0/110, 0/0/111, 0/0/112, 0/0/113, 0/0/116, 0/0/119, 0/0/120, 0/0/121
+</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">46: Detector input 3 - Input telegram</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/121</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/122 Allarme radio 2</colValue>
+<colValue nr="2">12: channel 7 - switching</colValue>
+<colValue nr="3">1.1.14 Radio-converter AP</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Radio-converter AP</colValue>
+<colValue nr="12">Radio-converter C00101</colValue>
+<colValue nr="13">1 bit</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/122</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/254 Date</colValue>
+<colValue nr="2">2: Event list memory - Input date</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">3 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/254</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">10: 3 byte - 3 byte object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">3 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/255, 0/0/254</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">50: Date - Date Slave</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">3 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/254</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1">0/0/255 Time</colValue>
+<colValue nr="2">1: Event list memory - Input time</colValue>
+<colValue nr="3">1.1.19 SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">T</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">SCM/S1.1 Security Module, MDRC</colValue>
+<colValue nr="12">Security Slave/2</colValue>
+<colValue nr="13">3 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/255</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">10: 3 byte - 3 byte object-collection</colValue>
+<colValue nr="3">1.1.17 Facility Panel</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11">Facility Panel</colValue>
+<colValue nr="12">Facility Panel 501101</colValue>
+<colValue nr="13">3 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/255, 0/0/254</colValue>
+</row>
+ 
+	<row>
+<colValue nr="1"/>
+<colValue nr="2">51: Time - Time Slave</colValue>
+<colValue nr="3">1.1.15 LOGO!  /1</colValue>
+<colValue nr="4">S</colValue>
+<colValue nr="5"/>
+<colValue nr="6">C</colValue>
+<colValue nr="7">R</colValue>
+<colValue nr="8">W</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">U</colValue>
+<colValue nr="11">LOGO!  /1</colValue>
+<colValue nr="12">20 CO LOGO! 900E02</colValue>
+<colValue nr="13">3 Byte</colValue>
+<colValue nr="14">Basso</colValue>
+<colValue nr="15">0/0/255</colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">KNX01 Rilevatore di fumo</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">KNX02 Rilevatore di gas</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">KNX03 Forno elettrico</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">KNX04 Forno microonde</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">KNX05 Elettrovalvola gas</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">KNX06 Lavatrice</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">KNX07 Scaldabagno</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">KNX08 Piano cottura</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">KNX09 Accessi</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">1.3.3 Tapparella</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+<row>
+<colValue nr="1"/>
+<colValue nr="2"></colValue>
+<colValue nr="3">1.3.4 Tenda</colValue>
+<colValue nr="4"/>
+<colValue nr="5"/>
+<colValue nr="6">-</colValue>
+<colValue nr="7">-</colValue>
+<colValue nr="8">-</colValue>
+<colValue nr="9">-</colValue>
+<colValue nr="10">-</colValue>
+<colValue nr="11"></colValue>
+<colValue nr="12"></colValue>
+<colValue nr="13"></colValue>
+<colValue nr="14"></colValue>
+<colValue nr="15"></colValue>
+</row>
+
+</rows>
+
+</root>
+

@@ -1,0 +1,166 @@
+@c ----------------------------------------------------------------------------
+@c %**start of Server side
+@c ----------------------------------------------------------------------------
+
+@menu
+* Server side::         The server side of the application
+@end menu
+
+@node Server side
+@chapter Server side
+
+@section @keyWord{DomoNetWS}
+
+@float Figure,fig:dnwsa2
+@center @image{images/domoNetWSArchitecture2,400pt,,,jpg}
+
+@caption{The domoNetWS (server side) architecture: a general view.}
+@end float
+
+At startup time, the server (@ref{fig:dnwsa2}) sets up the @keyWord{techManager}s that are in the
+@keyWord{techManagerList} data structure and it requests them a list of
+@keyWord{domoDevice}s that are currently avaiable on them. In fact, each @keyWord{techManager}
+works as gateway for a specific domotic technology. @keyWord{techManager} and has the duty to manage and interact physically with the domotic technology and with its own devices.
+When a @keyWord{techManager} recognizes a device of its competence, it creates the corresponding
+@keyWord{domoDevice}. 
+
+In this way, the device is described in terms of functionalities and characteristics and notified in @keyWord{DomoML}
+formalism to @keyWord{DomoNetWS}. @keyWord{DomoNetWS} then includes the @keyWord{domoDevice} description in the @keyWord{DomoDeviceList} structure assigning to it a @keyWord{domoAddress}. 
+
+@subsection The execution of a @keyWord{domoMessage} for the @keyWord{DomoNetWS}
+The request to execute a domoMessage can be originated by a 
+@keyWord{DomoNet client} (@ref{fig:ex1}) or by another instance of 
+@keyWord{DomoNetWS} placed somewhere on Internet (@ref{fig:dnwsa3}).
+A client application or another instance of @keyWord{DomoNetWS} can request to
+execute a @keyWord{domoMessage} to the server.
+When the request of execution of a @keyWord{domoMessage} arrives to the
+@keyWord{DomoNetWS} (@ref{fig:dnwsa2}), the server identifies the 
+@keyWord{domoDevice} involved in the operation. 
+The identification of a @keyWord{domoDevice} is realized
+throught its @keyWord{DomoDeviceId} that is obtained
+combining the @keyWord{receiverURL} and @keyWord{receiverId} attributes of the @keyWord{domoMessage}.
+Using the @keyWord{domoDevice} description, the server finds the @keyWord{techManager}
+that manage the corresponding @keyWord{device} of the @keyWord{domoDevice}
+using the attribute named @keyWord{tech}.
+The @keyWord{domoMessage} is then tranfered to the found @keyWord{techManager}
+to be translated in @keyWord{techMessage} to provide to its execution.
+Once the @keyWord{domoMessage} is executed, the @keyWord{techManager} prepares
+a new @keyWord{domoMessage} of type @keyWord{failure} or @keyWord{success}, 
+in the outcome of the transaction.
+
+The request to execute a @keyWord{domoMessage} can came from a client application (for the remote control of devices), from another @keyWord{web service} (for the cooperation).
+When a @keyWord{domoMessage} arrives for being executed, first of all it comes characterized the @keyWord{domoDevice} of the interested device throught the @keyWord{DomoDeviceId} using the attributes @keyWord{receiverURL} and @keyWord{receiverId} of the message. From the @keyWord{domoDevice} it comes characterized the type of belongings technology of the device and, with the @code{techManagerList}, characterized the @keyWord{tech mamanger} of competence to which forward the message. The @keyWord{techManager} translates the @keyWord{domoMessage} in its corresponding @keyWord{techMessage} and supplies to its execution.
+Executed the message, the @keyWord{techManager} supplies to construct a new one @keyWord{domoMessage} of success (@code{type = "SUCCESS"}) or failure (@code{type = "FAILURE"}) with an eventual answer of the device. 
+
+@section @emph{techManager}
+A @keyWord{techManager} is a gateway used to physically 
+interface the system side of the middleware with a specific domotic technology such as
+@keyWord{KNX}, @keyWord{UPnP}, @keyWord{X10}, @keyWord{ZigBee}, etc. 
+To do that, the @keyWord{techManager} interfaces directly the specific wired or 
+wireless domotic bus of the technology to integrate, to capture and to send 
+data packets to domotic devices. 
+
+@float Figure,fig:tma1
+@center @image{images/techManagerArchitecture1,400pt,,,jpg}
+@caption{The techManager architecture: the execution of a domoMessage.}
+@end float
+
+@keyWord{techManager} main functionalities are:
+@itemize @bullet
+@item to create @keyWord{domoDevice}s for the @keyWord{devices} that are 
+available in the domotic bus of competence of the @keyWord{techManager}; 
+@item to translate a @keyWord{domoAddress} in a @keyWord{real address} and vice versa;
+@item to translate a @keyWord{domoMessage} in a @keyWord{techMessage} and vice versa.
+@item to write and read data to and from the domotic devices using, when 
+available, the domotic bus.
+@end itemize
+
+@subsection Executing a @keyWord{domoMessage}
+When a @keyWord{techManager} receives a @keyWord{domoMessage} to be executed 
+(@ref{fig:tma1}), it must find the @keyWord{real address} of the 
+@keyWord{device} and the @keyWord{domoDevice} that are involved in the 
+communication. 
+To do that, the @keyWord{techManager} exploits the field @keyWord{receiverId}
+of the received @keyWord{domoMessage} twice: once as input parameter for the 
+@keyWord{address translator} functionality defined in the @keyWord{techManager}
+in order to find the @keyWord{real address} and of the device, and the other 
+used as @keyWord{domoDeviceId} to get the corresponding @keyWord{domoDevice}.
+For each @keyWord{domoDeviceId} it’s possible to associate more than one 
+@keyWord{real address} (that is useful for some domotic technology such as KNX)
+but for each @keyWord{real address} it’s possible to associate only one 
+@keyWord{domoDeviceId}.
+
+The @keyWord{message} field of the received @keyWord{domoMessage} contains the 
+name of the service of the @keyWord{domoDevice} to invoke. 
+Moreover, in the @keyWord{domoMessage} are eventually described input and output 
+parameters with the corresponding datatypes. 
+According with the characteristics of the domotic system managed by the 
+@keyWord{techManager}, all these information contained in the 
+@keyWord{domoMessage} are translated into a @keyWord{techMessage} and sent to 
+the device through the domotic bus.
+If the @keyWord{techMessage} sent to the device requires a response from it, 
+the reply will be captued from the domotic bus and translated to 
+@keyWord{domoMessage}. 
+The @keyWord{domoMessage}containing the response will be forwarded to who 
+requested the information. 
+In any case, a domoMessage of type @code{SUCCESS} or @code{FAILURE} is emitted 
+by @keyWord{techManager} to inform about the outcome of the operation. 
+
+@section The cooperation between different @keyWord{techManagers}
+
+To reach the interoperability objective, the middleware exploits the
+cooperation between @keyWord{techManager} (@ref{fig:dnwsa1}).
+Each @keyWord{techManager} is able on the one hand to "speach" the domotic
+technology language that it manages and the other the @keyWord{domoML} 
+formalism.
+Being @keyWord{techManager}s able to translate from one language to the other
+language, to act cooperation it is sufficient to exploit the common
+@keyWord{domoML} facilities. 
+
+@float Figure,fig:dnwsa1
+
+@center @image{images/domoNetWSArchitecture1,400pt,,,jpg}
+
+@caption{The cooperation between two techManager for the domotic interoperability}
+@end float
+
+To reach the interoperability objective, the middleware exploits the 
+cooperation between @keyWord{techManager}s. Involved @keyWord{techManager}s
+can belong to the same (@ref{fig:dnwsa2}) or to different @keyWord{DomoNetWS}
+(@ref{fig:dnwsa3}). 
+Infact, every @keyWord{DomoNetWS} can import devices belonging to different 
+@keyWord{DomoNetWS}s. Imported devices are recognized using the @keyWord{url}
+field of their @keyWord{domoDevice} descriptions that identifies their belonging 
+@keyWord{DomoNetWS}. 
+Each @keyWord{techManager} is able on the one hand to “speach” the domotic 
+@keyWord{tech language} and the other the @keyWord{DomoML} formalism. 
+Being @keyWord{techManager}s able to translate from one language to the other 
+language, to act cooperation it is sufficient to exploit @keyWord{DomoML} facilities.
+
+@float Figure,fig:dnwsa3
+
+@center @image{images/domoNetWSArchitecture3,400pt,,,jpg}
+
+@caption{Two distinct instances of DomoNetWS that interact.}
+@end float
+
+In @ref{fig:dnwsa2} and @ref{fig:dnwsa3}, a @keyWord{techManager} receives from the 
+@keyWord{DomoNetWS} a request to execute a @keyWord{domoMessage}.
+Analyzing the @keyWord{domoMessage}, the @keyWord{techManager} is able to find
+the correct @keyWord{device} and @keyWord{service} that are related with the
+request.
+With the acquired information, @keyWord{techManager} is able to translate the
+@keyWord{domoMessage} in @keyWord{techMessage} andand to send it in the domotic
+bus for its execution.
+After the execution of the @keyWord{techMessage} and after the eventually response
+by the involved device, the @keyWord{techManager} sends the result to
+@keyWord{DomoNetWS} that verifies the existence of the @keyWord{linkedService}
+tag in the description of the invoked @keyWord{service} in the
+@keyWord{domoMessage}.
+If @keyWord{DomoNetWS} finds at least a @keyWord{linkedService} tag, it
+generates and sends new @keyWord{domoMessage}s to the corresponding
+@keyWord{techManager}s for their execution.
+
+@c ----------------------------------------------------------------------------
+@c %**end of Server Side
+@c ----------------------------------------------------------------------------

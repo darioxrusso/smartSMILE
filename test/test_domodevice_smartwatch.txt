@@ -1,0 +1,26 @@
+TEST SMARTWATCH
+---------------
+
+<device description="Smartwatch able to send data" id="" manufacturer="Samsung" position="" positionDescription="" serialNumber="mi-band" tech="DOMOML" type="smartwatch" url=""><service description="The info of the user" name="info" prettyName="Get info"><input description="" name="rate" type="INT" /><input description="" name="step" type="LONG" /><input description="" name="distance" type="LONG" /><input description="" name="sleep" type="LONG" /></service></device>
+
+<message messageType="REMOVE" message="mi-band" />
+
+<message message="mi-band" messageType="EXISTS" receiverId="" receiverURL="" senderId="" senderURL="" />
+
+
+<message message="info" messageType="UPDATE" receiverId="" receiverURL="" senderId="202" senderURL=""><input name="rate" type="INT" value="80" /><input name="step" type="LONG" value="10000" /><input name="distance" type="LONG" value="4000" /><input name="sleep" type="LONG" value="480" /></message>
+
+TEST SUPSI
+----------
+
+<device description="Basic I/O shield" id="" manufacturer="Funnel I/O v2.0" positionDescription="Laboratorio TTHF" serialNumber="90A2DAF4404E.111.013" tech="DOMOML" type="XBee" url=""><service description="Temperature sensor [C]" output="BOOLEAN" outputDescription="digital, input" name="SENS.001" prettyName="TI-LM35" /></device>
+
+<message message="90A2DAF4404E.111.013" messageType="UPDATE" receiverId="" receiverURL="" senderId="" senderURL=""><input name="SENS.001" type="BOOLEAN" value="1" /></message>
+
+<device description="Basic I/O shield" id="" manufacturer="Funnel I/O v2.0" position="" positionDescription="Laboratorio TTHF" serialNumber="brgw4aal.111.001.BAT" tech="DOMOML" type="XBee" url=""><service description="Battery" name="BAT" output="INT" outputDescription="" prettyName="Li-Ion 3.7V 400mAh 1.48Wh" /></device>
+
+
+
+<properties>
+  <property name="socket1" value="91.231.179.42:7777" />
+</properties>  

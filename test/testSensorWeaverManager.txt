@@ -1,0 +1,7 @@
+<device description="light sensor on the terrace." id="" manufacturer="philips" postionDescription="terrace" serialNumber="100" tech="SENSORWEAVER" type="light sensor" url=""> <service description="Get the current intensity" output="INT" outputDescription="Gives the current intensity of the light" name="value" prettyName="Get intensity" /></device>
+
+<device description="light sensor 2." id="" manufacturer="philips" postionDescription="terrace" serialNumber="101" tech="SENSORWEAVER" type="light sensor" url=""> <service description="Get the current intensity" output="INT" outputDescription="Gives the current intensity of the light" name="value" prettyName="Get intensity" /></device>
+
+<message message="100" messageType="UPDATE" receiverId="100" receiverURL="" senderId="100" senderURL=""> <input name="value" type="INT" value="0" /></message>
+
+<device description="light sensor on the terrace." id="5" manufacturer="philips" postionDescription="terrace" serialNumber="100" tech="SENSORWEAVER" type="light sensor" url=""> <service description="Get the current intensity" output="INT" outputDescription="Gives the current intensity of the light" name="value" prettyName="Get intensity"><linkedService hasValue="0" id="21" ifInput="status" service="0/0/102" url=""><linkedInput to="value" value="1" /></linkedService></service></device>

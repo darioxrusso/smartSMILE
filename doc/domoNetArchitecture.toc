@@ -1,0 +1,41 @@
+@unnchapentry{GNU GENERAL PUBLIC LICENSE}{10001}{Copying}{1}
+@unnsecentry{Preamble}{10001.1}{}{1}
+@unnsecentry{TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION}{10001.2}{}{2}
+@unnsecentry{Appendix: How to Apply These Terms to Your New Programs}{10001.3}{}{6}
+@numchapentry{Introduction}{1}{Introduction}{7}
+@numsecentry{The problem}{1.1}{}{7}
+@numsecentry{The domotics}{1.2}{}{8}
+@numsubsecentry{@emph {Domotic middlewares}}{1.2.1}{}{8}
+@numsecentry{The solution: @emph {DomoNet}}{1.3}{}{9}
+@numsecentry{Dictionary}{1.4}{}{10}
+@numsecentry{How to install, compile and launch the application}{1.5}{}{11}
+@numchapentry{DomoML}{2}{DomoML}{14}
+@numsecentry{What @emph {domoML} is and what it does}{2.1}{}{14}
+@numsubsecentry{@keyWord {domoDevice}}{2.1.1}{}{14}
+@numsubsecentry{@keyWord {domoMessage}}{2.1.2}{}{16}
+@numchapentry{Server side}{3}{Server side}{18}
+@numsecentry{@keyWord {DomoNetWS}}{3.1}{}{18}
+@numsubsecentry{The execution of a @keyWord {domoMessage} for the @keyWord {DomoNetWS}}{3.1.1}{}{18}
+@numsecentry{@emph {techManager}}{3.2}{}{19}
+@numsubsecentry{Executing a @keyWord {domoMessage}}{3.2.1}{}{20}
+@numsecentry{The cooperation between different @keyWord {techManagers}}{3.3}{}{21}
+@numchapentry{Client side}{4}{Client side}{23}
+@numchapentry{The development}{5}{The development}{24}
+@numsecentry{@keyWord {TechManagers}}{5.1}{}{24}
+@numsubsecentry{@keyWord {KNXManager}}{5.1.1}{}{24}
+@numsubsubsecentry{Capturing the @keyWord {techMessage} from the @keyWord {Konnex} bus}{5.1.1.1}{}{26}
+@numsubsecentry{@keyWord {UPnPManager}}{5.1.2}{}{26}
+@numsubsubsecentry{Capturing the @keyWord {techMessage} from the @keyWord {UPnP} net}{5.1.2.1}{}{29}
+@numsubsecentry{Implementing a new one tech manager}{5.1.3}{}{29}
+@numsecentry{The @keyWord {domoNetClient}}{5.2}{}{30}
+@numsubsecentry{A possible @keyWord {domoNetClientUI}}{5.2.1}{}{30}
+@numchapentry{Conclusions}{6}{Conclusions}{34}
+@numsecentry{Realizations experience and appraisals.}{6.1}{}{34}
+@numsecentry{Integration with Internet}{6.2}{}{34}
+@numsecentry{Future directions of research}{6.3}{}{34}
+@unnchapentry{Appendices}{10002}{Appendices}{35}
+@appentry{Copying This Manual}{A}{Copying This Manual}{36}
+@appsecentry{GNU Free Documentation License}{A.1}{GNU Free Documentation License}{36}
+@appsubsecentry{ADDENDUM: How to use this License for your documents}{A.1.1}{}{42}
+@unnchapentry{Index}{10003}{Index}{43}
+@unnchapentry{Figures}{10004}{Figures}{45}

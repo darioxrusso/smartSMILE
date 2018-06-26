@@ -1,0 +1,3 @@
+<properties>
+ <property name="socketPort" value="7779" />
+</properties>

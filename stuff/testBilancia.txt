@@ -1,0 +1,8 @@
+
+<device description="Wii Balance Board" id="" manufacturer="Nintendo" positionDescription="" serialNumber="A4C0E1CC6192" tech="DOMOML" type="Balance Board" url=""><service description="Weight" name="weight" output="DOUBLE" outputDescription="Weight" prettyName="Weight" /><service description="Weight" name="weight2" output="DOUBLE" outputDescription="Weight" prettyName="Weight" /></device>
+
+
+
+<message message="A4C0E1CC6192" messageType="UPDATE" receiverId="" senderId=""><input name="weight" type="DOUBLE" value="2.4157336014666875" /><input name="weight2" type="DOUBLE" value="2.4157336014666875" /></message>
+
+<message message="A4C0E1CC6192" messageType="REMOVE" output="BOOLEAN" receiverId="A4C0E1CC6192" receiverURL="" senderId="" senderURL="" />

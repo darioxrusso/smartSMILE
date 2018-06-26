@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# This takes a list of extensions as parameters, with no dot.
+
+FILES=""
+for x in $@; do
+    FILES="$FILES `find | grep \\.$x\$`"
+#    FILES="$FILES `find | grep Makefile`"
+done
+
+for x in $FILES; do
+    cat HEADER $x > temporary
+    mv temporary $x
+done
+rm -f temporary

@@ -1,0 +1,296 @@
+@c ----------------------------------------------------------------------------
+@c %**start of Development
+@c ----------------------------------------------------------------------------
+
+@menu
+* The development::         The development of the application
+@end menu
+
+@node The development
+@chapter The development
+This chapter describes the detailed implementations of the architecture.
+@section @keyWord{TechManagers}
+These are the @keyWord{techManagers} implemented that they can be taken as example.
+@subsection @keyWord{KNXManager}
+The @keyWord{KNXManager} is the module that manages the @keyWord{Konnex}@footnote{http://www.konnex.org} technology and it is based on the open source library called ``@indicize{Calimero}@footnote{http://calimero.sourceforge.net}.''
+The constructor of the module takes as parameters the @keyWord{URL} and the port number of the service that is connected to the devices.
+At startup time it perform a connection to the server and the initialization of the structures that take care of the conversion of datatypes, from @code{domoML.DomoDevice.domoDevice.DataType} to @code{Major} and @code{Minor} indetifier used in order to convert the tag input of the @keyWord{domoMessage} as a fruibile value for the technology.
+After the initializations the module loads the available devices parsing the @keyWord{XML} file generated from the application ``@keyWord{ETS 3}@footnote{http://www.konnex.org/knx-tools/ets/intro/}'', a software to configure konnex networks.
+The configuration file contains the descriptions and all the functionalities that the @keyWord{Konnex system} can offer.
+As example is shown a piece of configuration file for the service of a device (in italian, drivers are in italian language):
+
+@float Example,exa:knxconf1
+@example
+<row>
+ <colValue nr="1">0/0/1 Comando Uscita A</colValue>
+ <colValue nr="2">
+  0: Comando,tasto sinistro superiore-Commutazione
+ </colValue>
+ <colValue nr="3">
+  1.1.4 16196.. Pulsante 4 canali
+ </colValue>
+ <colValue nr="4">S</colValue>
+ <colValue nr="5">-</colValue>
+ <colValue nr="6">C</colValue>
+ <colValue nr="7">-</colValue>
+ <colValue nr="8">W</colValue>
+ <colValue nr="9">T</colValue>
+ <colValue nr="10">U</colValue>
+ <colValue nr="11">
+    16196.. Pulsante 4 canali
+ </colValue>
+ <colValue nr="12">
+    16196 On-Off-Dimmer-Tapparelle-Led
+ </colValue>
+ <colValue nr="13">1 bit</colValue>
+ <colValue nr="14">Basso</colValue>
+ <colValue nr="15">0/0/1</colValue>
+</row>
+@end example
+@caption{A piece of the @keyWord{Konnex} @keyWord{XML} ``@keyWord{ETS 3}'' configuration file.}
+@end float
+
+From this piece, and every tag @code{row} present in the file, it is possible to characterize:
+
+@itemize @bullet
+@item in the second @code{colValue}: the name of the service;
+@item in the third @code{colValue} (the begins part): the @keyWord{real address} of the device;
+@item in seventh @code{colValue}: if the readable field (set to @code{R});
+@item in eighth @code{colValue}: if the scrivibile field (set to @code{W});
+@item in ninth @code{colValue}: if the transmissible field (set to @code{T});
+@item in eleventh @code{colValue}: the name of the device that offers the service;
+@item in twelfth @code{colValue}: the description of the service;
+@item in fifteenth @code{colValue}: the address of group associated to the service.
+@end itemize 
+
+The others @code{colValue} are not significant for the scope proposed from the @keyWord{KNXManager}.
+It's interessant only the transmissible and at least readable or writeable services.
+A device comes described in all its services joining all the eleventh @code{colValue} with the same label.
+This example produces the following @keyWord{domoDevice}:
+
+@float Example,exa:knxconf2
+@example
+<device description="" id="" manufacturer=""
+ postionDescription="" serialNumber="" tech="KNX"
+ type="16196.. Pulsante 4 canali" url="">
+ <service description="Get the status"
+  output="BOOLEAN" outputDescription="The value"
+  prettyName="Get status" name="GET_STATUS" />
+ <service name="0/0/1"
+  description="16196 On-Off-Dimmer-Tapparelle-Led"
+  prettyName="16196 On-Off-Dimmer-Tapparelle-Led">
+  <input description="The value" name="value"
+   type="BOOLEAN">
+   <allowed value="TRUE" />
+   <allowed value="FALSE" />
+  </input>
+ </service>
+</device>
+@end example
+@caption{The @keyWord{domoDevice} translated from the piece of the @keyWord{Konnex} XML ``ETS 3'' configuration file.}
+@end float
+
+@subsubsection Capturing the @keyWord{techMessage} from the @keyWord{Konnex} bus
+All the messages that journey on the @keyWord{Konnex bus} come captured from 
+the @keyWord{KNXManager} through the use of a @keyWord{listener} in listen on the bus.
+It's interesting to analyze the bus for two scopes:
+@itemize @bullet
+@item in attended of answer derived from the execution of a 
+@keyWord{domoMessage}: in this case it has been implemented a semafphores 
+system where the producers are the devices that write on the bus and the 
+@keyWord{techManager} is the consumer.
+The @keyWord{realAddress} of the sender of every message that journeys on the 
+bus comes confronted with that one of which we are in wait.
+If the address comes recognized in a limit of a fixed time, it comes generated
+with the data of the @keyWord{techMessage}, the response @keyWord{domoMessage} 
+otherwise comes generated a @keyWord{domoMessage} of failure. A typical example 
+of this mechanism is the interrogation of a device in order to know the state;
+@item in order to implement the cooperation: every message that journeys on the
+bus comes captured from the listener. The @keyWord{techMessage} extrapolates 
+the @keyWord{realAddress} of the sender device and recognizes the service through the @keyWord{address group} to which the command is turned.
+With these data, it is possible to gain the @keyWord{domoDevice} and the description of the service. The @keyWord{web service} can verify if the @keyWord{linkedService} tag is set up and to act consequently.
+@end itemize
+
+@subsection @keyWord{UPnPManager}
+The UPnPManager is the module that manage the @keyWord{UPnP}@footnote{http://www.upnp.org} technology and is based on the opensource library ``Cyberlink@footnote{http://sourceforge.net/projects/cgupnpjava}''. At startup time, the @keyWord{UPnPManager} inizialize the @code{ManagerPoint}: the listener, heart of the manager, that it allows to add, to remove, to test the hartbeat and to admin the packages of the devices. The @keyWord{ManagerPoint} supplies to inizialize the data structures for the conversion from @code{domoML.DomoDevice.domoDevice.DataType} to the symbols used for this technology and vice versa.
+When it comes added a device to the @keyWord{UPnP} net, this is announced by the device giving its own description and the list services that it can offer. These informations are stored on various XML files that the library supplies to parse and give of the correspondent tree. To this point it becomes easy to obtain the information. An example of description of the device it is:
+
+@float Example,ex:upnpdevice1
+@example
+<device>
+ <deviceType>urn:schemas-upnp-org:device:light:1
+ </deviceType>
+ <friendlyName>CyberGarage Light Device</friendlyName>
+ <manufacturer>CyberGarage</manufacturer>
+ <manufacturerURL>http://www.cybergarage.org
+ </manufacturerURL>
+ <modelDescription>CyberUPnP Light Device
+ </modelDescription>
+ <modelName>Light</modelName>
+ <modelNumber>1.0</modelNumber>
+ <modelURL>http://www.cybergarage.org</modelURL>
+ <serialNumber>1234567890</serialNumber>
+ <UDN>uuid:cybergarageLightDevice</UDN>
+ <UPC>123456789012</UPC>
+ <iconList>
+  ...
+ </iconList>
+ <serviceList>
+  ...
+ </serviceList>
+ <presentationURL>http://www.cybergarage.org
+ </presentationURL>
+</device>
+@end example
+@caption{The description of an @keyWord{UPnP} device.}
+@end float
+
+From this piece of code it is found:
+@itemize @bullet
+@item from the tag @code{friendlyName}: the description of the device;
+@item from the tag @code{deviceType}: the @keyWord{real address} of the device;
+@item from the tag @code{modelName}: the type of the device;
+@item from the tag @code{serialNumber}: the serial number.
+@end itemize
+The one of the offered services (called @code{actions}) is:
+@float Example,ex:upnpdevice2
+@example
+<actionList>
+ <action>
+  <name>SetPower</name>
+  <argumentList>
+   <argument>
+    <name>Power</name>
+    <relatedStateVariable>
+       Power
+    </relatedStateVariable>
+    <direction>in</direction>
+   </argument>
+   <argument>
+    <name>Result</name>
+    <relatedStateVariable>
+      Result
+    </relatedStateVariable>
+    <direction>out</direction>
+   </argument>
+  </argumentList>
+ </action>
+ <action>
+  <name>GetPower</name>
+  <argumentList>
+   <argument>
+    <name>Power</name>
+    <relatedStateVariable>Power</relatedStateVariable>
+    <direction>out</direction>
+   </argument>
+  </argumentList>
+ </action>
+</actionList>
+
+<serviceStateTable>
+ <stateVariable sendEvents="yes">
+  <name>Power</name>
+  <dataType>boolean</dataType>
+  <allowedValueList>
+   <allowedValue>0</allowedValue>
+   <allowedValue>1</allowedValue>
+  </allowedValueList>
+  <allowedValueRange>
+   <maximum>123</maximum>
+   <minimum>19</minimum>
+   <step>1</step>
+  </allowedValueRange>
+ </stateVariable>
+ <stateVariable sendEvents="no">
+  <name>Result</name>
+   <dataType>boolean</dataType>
+ </stateVariable>
+</serviceStateTable>
+@end example
+@caption{The description of a service of an @keyWord{UPnP} device.}
+@end float
+
+From this piece of code it is deduced:
+@itemize @bullet
+@item from the tag @code{action-name}: the name and the pretty name of the service;
+@item from the tag @code{argument-name}: the name of the parameter of input;
+@item from the tag @code{relatedStateVariable}: the key to find in the @code{serviceStateTable} in order to find the other information of parameter;
+@item from the tag @code{direction}: if it is @code{out} it is a parameter of output therefore a value of return to the execution is waited for the service; if it is @code{in} it is a parameter of input;
+@item from the tag @code{datatype}: the datatype of the parameter;
+@item from the tag @code{allowedValue}: the values allowed for that parameter. 
+@end itemize
+
+For every @code{action} a set of argument is previewed.
+Every @code{argument} then has a datatype to be converted in @code{domoML.DomoDevice.domoDevice.DataType}. Of every @code{argument} it is necessary to verify the @code{direction} tag for knowing if the variable is used as parameter of input or output. The correspondent @keyWord{domoDevice} is:
+@float Example,ex:upnpdevice3
+@example
+<device description="CyberGarage Light Device" id=""
+ manufacturer=""  positionDescription=""
+ serialNumber="1234567890" tech="UPNP" type="Light">
+   <service description="" name="SetPower"
+    output="BOOLEAN" prettyName="SetPower">
+     <input description="" name="Power"
+      type="BOOLEAN">
+       <allowed value="0" />
+       <allowed value="1" />
+     </input>
+   </service>
+   <service description="" name="GetPower"
+    output="BOOLEAN" prettyName="GetPower" />
+</device>
+@end example
+@caption{The @keyWord{domoDevice} translated from the piece of the description of a service in a @keyWord{UPnp} device.}
+@end float
+
+@subsubsection Capturing the @keyWord{techMessage} from the @keyWord{UPnP} net
+The @keyWord{UPnPManagerPoint} implements also the functions of @code{listener} in attempt of messages that journey on the net.
+When a new message journeys, it is calculated the subscription code of the service and the @keyWord{domoDeviceId} of the sender device. With these information, passed to the @keyWord{web service}, is possible to verify the @keyWord{linkedService} presence associated  to the invoked service.
+
+@subsection Implementing a new one tech manager
+In order to implement a new @keyWord{techManager} module, it is necessary to extend the class @code{domoNetWS.techManager.TechManager} and to create a new instance of the new class in @code{domoNetWS.DomoNetWS.managerList} using like key the identifier of the technology (it must be contained in @code{domoML.domoDevice.DomoDevice.DomoTech}).
+The new module it must implement the abstract methods that are:
+@itemize @bullet
+@item @code{public void addDevice (final domoDevice DomoDevice, String address)}: in order to add a device to the list of the @keyWord{domoDevice} of the @keyWord{web service}; it must call the methods @code{doubleHash.add()} and @code{addDomoDevice()} of the @keyWord{web service};
+@item @code{public DomoMessage execute (DomoMessage domoMessage) throws Exception}: in order to execute a @code{domoML.domoMessage.DomoMessage}; it must be in a position to converting the @keyWord{domoMessage} in @keyWord{techMessage} and vice versa;
+@item @code{public void finalize()}: actions to execute when it comes closed the @keyWord{web service}.
+@end itemize
+
+@section The @keyWord{domoNetClient}
+The @keyWord{DomoNetClient} allows to control in remote the devices dislocates in the @keyWord{domoNet} network inside the @keyWord{web services}.
+
+@subsection A possible @keyWord{domoNetClientUI}
+This interface implements a graphical client to attack to @keyWord{DomoNetClient} engine.
+
+@float Figure,fig:sdncui1
+
+@center @image{images/domoNetClientSnapshot1,400pt,,,jpg}
+
+@caption{Snapshot of the @keyWord{domoNetClientUI} (main window).}
+@end float
+
+ The client it is supplied with an @keyWord{XML} file configuration from which it takes the information on the available @keyWord{web services}. The addresses of the web service are shown up contextually to one short description. The bar of the address it can however be edited. Selected or editated the address of the @keyWord{web service}, clicking on the @code{Connect} button the connection to the @keyWord{web service} is executed materially. The @keyWord{web service} answers giving a list of the @keyWord{domoDevice} currently available (the devices of all supported technologies). The @keyWord{domoDevice} come shown uniforms for @keyWord{web service} with one tree structure (@ref{fig:sdncui1}). Clicking on one of them comes opened one new window builded at run time parsng the description of the @keyWord{domoDevice}. The window shows informations about the device and all services available. 
+
+@float Figure,fig:sdncui2
+@center @image{images/domoNetClientSnapshot2,400pt,200pt,,jpg}
+@caption{Snapshot of the @keyWord{domoNetClientUI} (services window).}
+@end float
+
+For every service it comes shown the button labeled with the pretty name.
+To its right a textual field is present if, to the execution of the service, a return value is attended.
+To its left much input parameters as requested for that service exist. Next to every field, a description of the type of waited data is present. Correctly filling up the parameters of input demands and clicking on the button of the service, the client generates the correspondent @keyWord{domoMessage} to send to the @keyWord{domoNetClient} which supplies to address to the @keyWord{web service} of competence. In @ref{fig:sdncui2} is shown a window of the services of a television:
+@itemize @bullet
+@item @code{SetPower}: for setting the state of the television. It's needed a boolean parameter as input and attended a parameter of output like answer;
+@item @code{GetPower}: it gives back the state of the television with a parameter of output.
+@end itemize
+
+@float Figure,fig:sdncui3
+@center @image{images/domoNetClientSnapshot3,400pt,200pt,,jpg}
+@caption{Snapshot of the @keyWord{domoNetClientUI} (services window).}
+@end float
+
+
+In @ref{fig:sdncui3} the window of the services of one group of buttons at four channels with a service for each push-button. On it is possible to only invoke services that determine commutation of the push-buttons through a boolean value @code{0} or @code{1}.
+
+@c ----------------------------------------------------------------------------
+@c %**end of Development
+@c ----------------------------------------------------------------------------

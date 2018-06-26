@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<!-- build file for domoNetWS -->
+
+<project name="domoNet" default="all" basedir=".">
+
+   <!-- main directory containing all base tools required --> 
+   <property name="tools" value="../../tools"/> 
+   <!-- web server and web container directories --> 
+   <property name="catalina_home" value="${tools}/apache-tomcat-6.0.10"/> 
+   <property name="catalina_base" value="${tools}/apache-tomcat-6.0.10"/> 
+   <!-- axis directory required to implement web services functionalities --> 
+   <property name="axis_base" value="${tools}/axis-1_4"/> 
+   <!-- xerces directory required to implement XML functionalities --> 
+   <property name="xerces_base" value="${tools}/xerces-2_9_0"/> 
+   <!-- library to implement KONNEX funcionalities --> 
+   <property name="calimero_libs" value="${tools}/calimero-1.4" /> 
+   <!-- library to implement UPnP funcionalities -->	 
+ 
+<!-- 
+   <property name="cyberlink_libs" value="${tools}/clink" /> 
+--> 
+   <property name="cidero_libs" value="${tools}/cidero" /> 
+   <!-- library to implement X10 functionalities --> 
+   <property name="x10Lib" value="${tools}/x10Lib" /> 
+   <!-- library to develop swing applications --> 
+   <property name="swingDesigner" value="${tools}/swingDesigner" /> 
+   <!-- library to implement scheduling --> 
+   <property name="jschedule" value="${tools}/jschedule" /> 
+ 
+   <!-- all derived subdirectories --> 
+   <property name="catalina_base_libs" 
+       value="${catalina_base}/webapps/axis/WEB-INF/lib"/> 
+   <property name="server-config_file" 
+       value="configFiles/server-config.wsdd"/> 
+   <property name="catalina_webapps" 
+       value="${catalina_base}/webapps"/> 
+   <property name="axis_webapps" value="${axis_base}/webapps"/>
+   <property name="axis_webapps_lib" value="${axis_webapps}/axis/WEB-INF/lib" />
+   <property name="catalina_axis" value="${catalina_base}/webapps/axis"/> 
+   <property name="catalina_webapps_axis_libs" 
+    value="${catalina_home}/webapps/axis/WEB-INF/lib"/> 
+   <property name="catalina_webapps_axis_WEB-INF" 
+    value="${catalina_home}/webapps/axis/WEB-INF"/> 
+ 
+ 
+   <!-- set global properties for this build --> 
+   <property name="src" value="src" /> 
+   <property name="build" value="build" /> 
+   <property name="dist" value="dist" /> 
+   <property name="doc" value="doc" /> 
+   <property name="javadoc" value="${doc}/javadoc" /> 
+ 
+   <!-- GENERAL SECTION --> 
+   <!--=================--> 
+ 
+   <target name="install"> 
+     <!-- Copy axis application inside Apache-Tomcat -->  
+     <copy todir="${catalina_webapps}"> 
+       <fileset dir="${axis_webapps}" includes="**/*" /> 
+     </copy> 
+ 
+     <!-- Copy Xerces inside Apache-Tomcat Axis application --> 
+     <copy todir="${catalina_webapps_axis_libs}"> 
+       <fileset dir="${xerces_base}"> 
+         <include name="**/*.jar"/> 
+       </fileset> 
+     </copy> 
+ 
+     <!-- Copy domoNetWS.properties --> 
+     <copy file="${src}/domoNetWS/domoNetWS.properties" 
+       todir="${catalina_webapps_axis_WEB-INF}" /> 
+ 
+     <!-- Copy XML directory --> 
+     <copy todir="${catalina_axis}/xml"> 
+       <fileset dir="xml" /> 
+     </copy> 
+ 
+     <!-- Copy the config file of the Apache-Tomcat server --> 
+     <copy file="${server-config_file}" 
+      todir="${catalina_webapps_axis_WEB-INF}" /> 
+ 
+     <!-- Copy Calimero libs inside Apache-Tomcat Axis application --> 
+     <copy todir="${catalina_webapps_axis_libs}"> 
+       <fileset dir="${calimero_libs}"> 
+         <include name="**/*.jar"/> 
+       </fileset> 
+     </copy> 
+ 
+     <!-- Copy Cyberlink libs inside Apache-Tomcat Axis application --> 
+<!-- 
+     <copy todir="${catalina_webapps_axis_libs}"> 
+       <fileset dir="${cyberlink_libs}"> 
+         <include name="**/*.jar"/> 
+       </fileset> 
+     </copy> 
+--> 
+     <!-- Copy Cidero libs inside Apache-Tomcat Axis application --> 
+     <copy todir="${catalina_webapps_axis_libs}"> 
+       <fileset dir="${cidero_libs}"> 
+         <include name="**/*.jar"/> 
+       </fileset> 
+     </copy> 
+   </target> 
+ 
+   <target name="dists" depends="distCommon, distDomoML, distDomoNetWS, distDomoNetClient" /> 
+ 
+   <target name="initComp"> 
+      <!-- Create the time stamp --> 
+      <tstamp/> 
+      <!-- Create the build directory structure used by compile --> 
+      <echo message="Creating build directory..." /> 
+      <mkdir dir="${build}" /> 
+   </target> 
+ 
+   <target name="initDist"> 
+      <!-- Create the distribution directory --> 
+      <echo message="Creating distribution directory..." /> 
+      <mkdir dir="${dist}" /> 
+   </target> 
+ 
+   <target name="all" depends="dists, javadoc, docs"> 
+      <echo message="Created all distribution and documentation files." /> 
+   </target> 
+ 
+   <target name="clean" depends="cleanDocs"> 
+      <!-- delete all backup files --> 
+      <echo message="Deleting all backup files..." /> 
+      <delete> 
+         <fileset dir="." includes="**/*~" defaultexcludes="no" /> 
+         <fileset dir="." includes="**/#*#" defaultexcludes="no"/> 
+      </delete>       
+      <!-- delete the ${build} and ${dist} directory trees --> 
+      <echo message="Cleaning distribution, compiled classes and docs..." /> 
+      <delete dir="${build}" /> 
+      <delete dir="${dist}" /> 
+      <delete dir="${javadoc}" /> 
+      <delete dir="${catalina_axis}" /> 
+      <delete file="${catalina_base_libs}/domoNetWS.jar" /> 
+   </target> 
+ 
+   <!-- COMMON SECTION --> 
+   <!--================--> 
+   <target name="distCommon" depends="initDist, compileCommon"> 
+      <!-- Put everithing in ${build} into the domoNet-${DSTAMP}.jar file --> 
+      <echo message="Creating distribution for common..." /> 
+      <jar jarfile="${dist}/common-${DSTAMP}.jar"> 
+         <fileset dir="${build}" includes="common/**/*" /> 
+      </jar> 
+   </target> 
+ 
+   <target name="compileCommon" depends="initComp"> 
+      <!-- Compile the java code from ${src} into ${build} --> 
+      <echo message="Compiling classes for common..." /> 
+      <javac srcdir="${src}/common" destdir="${build}/" debug="true">  
+	   <!--  debuglevel="lines, vars, source" optimize="on" -->
+     </javac> 
+   </target> 
+ 
+ 
+   <!-- DOMOML SECTION --> 
+   <!--================--> 
+   <target name="distDomoML" depends="initDist, compileDomoML"> 
+      <!-- Put everithing in ${build} into the domoNet-${DSTAMP}.jar file --> 
+      <echo message="Creating distribution for domoML..." /> 
+      <jar jarfile="${dist}/domoML-${DSTAMP}.jar"> 
+         <fileset dir="${build}" includes="domoML/**/*" /> 
+      </jar> 
+   </target> 
+ 
+   <target name="compileDomoML" depends="compileCommon"> 
+      <!-- Compile the java code from ${src} into ${build} --> 
+      <echo message="Compiling classes for domoML..." /> 
+      <javac srcdir="${src}/domoML" destdir="${build}/" debug="true">  
+	 <!--   debuglevel="lines, vars, source" optimize="on" --> 
+        <classpath> 
+           <fileset dir="${xerces_base}"> 
+              <include name="*.jar" /> 
+           </fileset> 
+        </classpath> 
+     </javac> 
+   </target> 
+	 
+    <!-- DOMONETWS SECTION --> 
+    <!--===================--> 
+   <target name="distDomoNetWS" depends="initDist, compileDomoNetWS, compileCommon"> 
+      <!-- Put everithing in ${build} into the domoML-${DSTAMP}.jar file --> 
+      <echo message="Creating distribution for domoNetWS..." /> 
+      <jar jarfile="${dist}/domoNetWS-${DSTAMP}.jar"> 
+         <fileset dir="${build}" includes="domoML/**/*, domoNetWS/**/*, common/**/*" /> 
+      </jar>	 
+      <copy file="dist/domoNetWS-${DSTAMP}.jar" tofile= 
+	  	"${catalina_base_libs}/domoNetWS.jar" />	 
+   </target>	 
+	 
+   <target name="compileDomoNetWS"
+     depends="initComp, compileDomoML, compileCommon, compileDomoNetClient"> 
+      <!-- Compile the java code from ${src} into ${build} --> 
+      <echo message="Compiling classes for domoNetWS..." /> 
+      <javac srcdir="${src}/domoNetWS" destdir="${build}" debug="true" 
+      	includeantruntime="false">  
+	<!-- debuglevel="lines, vars, source" optimize="on" -->
+         <classpath> 
+	        <fileset dir="${calimero_libs}"> 
+                  <include name="*.jar" /> 
+	        </fileset> 
+	        <fileset dir="${xerces_base}"> 
+                  <include name="*.jar" /> 
+	        </fileset> 
+	        <fileset dir="${axis_webapps_lib}"> 
+                  <include name="*.jar" /> 
+	        </fileset> 
+	        <fileset dir="${catalina_base}/lib"> 
+                  <include name="*.jar" /> 
+	        </fileset> 
+<!-- 
+		<fileset dir="${cyberlink_libs}"> 
+                  <include name="*.jar" /> 
+	        </fileset> 
+--> 
+		<fileset dir="${cidero_libs}"> 
+                  <include name="*.jar" /> 
+	        </fileset> 
+                <fileset dir="${x10Lib}"> 
+                  <include name="*.jar" /> 
+                </fileset> 
+ 
+         </classpath> 
+      </javac> 
+   </target> 
+ 
+   <!-- DOMONETCLIENT SECTION --> 
+   <!--=======================--> 
+   <target name="distDomoNetClient"
+      depends="initDist, compileDomoNetClient, compileCommon"> 
+      <!-- Put everithing in ${build} into the domoNet-${DSTAMP}.jar file --> 
+      <echo message="Creating distribution for domoNetClient..." /> 
+      <jar jarfile="${dist}/domoNetClient-${DSTAMP}.jar"> 
+         <fileset dir="${build}"
+            includes="domoML/**/*, domoNetClient/**/*, common/*/**" /> 
+      </jar> 
+   </target>	 
+ 
+   <target name="compileDomoNetClient"
+      depends="initComp, compileDomoML, compileCommon"> 
+      <!-- Compile the java code from ${src} into ${build} --> 
+      <echo message="Compiling classes for domoNetClient..." />  
+      <javac srcdir="${src}/domoNetClient" destdir="${build}" debug="true">  
+        <!-- debuglevel="lines, vars, source" optimize="on" --> 
+         <classpath> 
+            <fileset dir="${axis_webapps_lib}"> 
+               <include name="*.jar" /> 
+            </fileset> 
+            <fileset dir="${axis_base}/lib"> 
+               <include name="*.jar" /> 
+            </fileset> 
+            <fileset dir="${xerces_base}"> 
+               <include name="*.jar" /> 
+            </fileset> 
+         </classpath>
+      </javac> 
+   </target> 
+ 
+   <!-- DOMOBRAIN SECTION --> 
+   <!--=======================--> 
+
+   <target name="distDomoBrain" depends="initDist, compileDomoBrain, distCommon">  
+      <!-- Put everithing in ${build} into the domoNet-${DSTAMP}.jar file --> 
+      <echo message="Creating distribution for domoBrain..." /> 
+      <jar jarfile="${dist}/domoBrain-${DSTAMP}.jar"> 
+         <fileset dir="${build}" includes="domobrain/**/*" /> 
+      </jar> 
+   </target>	 
+
+   <target name="compileDomoBrain" depends="compileDomoML"> 
+      <echo message="Compiling classes for domoBrain..." /> 
+      <javac srcdir="${src}/domobrain" destdir="${build}/" debug="true">  
+	    <!-- debuglevel="lines, vars, source" optimize="on" --> 
+         <classpath> 
+           <fileset dir="${swingDesigner}"> 
+              <include name="*.jar" /> 
+           </fileset> 
+           <fileset dir="${axis_webapps_lib}"> 
+              <include name="*.jar" /> 
+           </fileset> 
+           <fileset dir="${axis_base}/lib"> 
+              <include name="*.jar" /> 
+           </fileset>
+           <fileset dir="${jschedule}"> 
+              <include name="*.jar" /> 
+           </fileset> 
+         </classpath> 
+      </javac> 
+   </target> 
+
+ 
+   <!-- HTML SECTION --> 
+   <!--==============--> 
+   <target name="compileDomoNetWSConfigurator"> 
+ 
+   </target> 
+ 
+   <target name="distDomoNetWSConfigurator"
+      depends="compileDomoNetWSConfigurator"> 
+   <!-- Create a war file of the html section --> 
+      <delete dir="${catalina_base}/webapps/domoNetWSConfigurator" /> 
+      <war warfile="${dist}/domoNetWSConfigurator-${DSTAMP}.war" 
+       webxml="${src}/html/domoNetWSConfigurator/WEB-INF/web.xml" 
+        basedir="${src}/html" /> 
+      <copy file="${dist}/domoNetWSConfigurator-${DSTAMP}.war" tofile= 
+	  	"${catalina_base}/webapps/domoNetWSConfigurator.war" />	 
+   </target> 
+ 
+ 
+ 
+   <!-- DOC SECTION --> 
+   <!--=============--> 
+   <target name="cleanDocs"> 
+      <!-- delete the generated doc files --> 
+      <echo message="Deleting generated doc files..." /> 
+      <delete> 
+         <fileset dir="${doc}" includes="*.log" /> 
+         <fileset dir="${doc}" includes="*.dvi" /> 
+         <fileset dir="${doc}" includes="*.pdf" /> 
+         <fileset dir="${doc}" includes="*.ps" /> 
+	 <fileset dir="${doc}" includes="*.html" /> 
+      </delete> 
+   </target> 
+ 
+   <target name="docs"> 
+      <!-- generate documentation files in different formats --> 
+      <echo
+        message="Creating documentation in dvi, html, pdf and ps formats..." /> 
+      <exec dir="${doc}" executable="texi2dvi"> 
+         <arg line="domoNetArchitecture.texi" /> 
+	 <arg line="-o domoNetArchitecture.dvi" /> 
+      </exec> 
+      <exec dir="${doc}" executable="texi2html"> 
+         <arg line="domoNetArchitecture.texi" /> 
+	 <arg line="-o domoNetArchitecture.html" /> 
+      </exec> 
+      <exec dir="${doc}" executable="dvipdf"> 
+         <arg line="domoNetArchitecture.dvi" /> 
+	 <arg line="domoNetArchitecture.pdf" /> 
+      </exec> 
+      <exec dir="${doc}" executable="dvips"> 
+         <arg line="domoNetArchitecture.dvi" /> 
+	 <arg line="-o domoNetArchitecture.ps" /> 
+      </exec> 
+   </target> 
+ 
+   <!-- JAVADOC SECTION --> 
+   <!--=================--> 
+   <target name="javadoc" 
+    		depends="compileDomoML, compileDomoNetWS, compileDomoNetClient"> 
+      <echo message="Creating javadoc..." /> 
+      <mkdir dir="${javadoc}"/> 
+      <javadoc sourcepath="${src}" destdir="${javadoc}" packagenames="*"> 
+      </javadoc> 
+   </target> 
+ 
+   <!-- LAUNCH SECTION --> 
+   <!--================--> 
+   <target name="startServer" depends="install, dists"> 
+     <echo message="Current OS: ${os.name}" /> 
+     <echo message="Cleaning logs" /> 
+     <delete dir="${catalina_home}/logs" /> 
+     <mkdir dir="${catalina_home}/logs" /> 
+     <echo message="Starting up web service..." /> 
+     <!-- For linux users... --> 
+     <exec executable="${catalina_home}/bin/startup.sh" os="Linux"> 
+       <env key="CATALINA_BASE" value="${catalina_base}"/> 
+       <env key="CATALINA_HOME" value="${catalina_home}"/> 
+     </exec> 
+     <!-- For windows users... --> 
+     <exec executable="${catalina_home}/bin/startup.bat" osfamily="Windows"> 
+       <env key="CATALINA_BASE" value="${catalina_base}"/> 
+       <env key="CATALINA_HOME" value="${catalina_home}"/> 
+     </exec> 
+   </target> 
+ 
+   <target name="startClient" depends="dists"> 
+     <echo message="Launching domoNetClientUI..." /> 
+     <java classname="domoNetClient.domoNetClientUI.DomoNetClientUI"
+       fork="true"> 
+       <classpath> 
+	 <fileset file="${dist}/domoNetClient-${DSTAMP}.jar" /> 
+         <fileset dir="${catalina_base_libs}"> 
+           <include name="*.jar" /> 
+         </fileset> 
+       </classpath> 
+     </java>		  	 
+   </target> 
+ <!--   
+    <target name="startServerTest" depends="dists"> 
+     <echo message="Launching Server test..." /> 
+     <java classname="domoNetWS.techManager.domoMLTCPManager.DomoMLTCPManagerServerTest"
+       fork="true"> 
+       <classpath> 
+	 <fileset file="${dist}/domoNetClient-${DSTAMP}.jar" /> 
+         <fileset dir="${catalina_base_libs}"> 
+           <include name="*.jar" /> 
+         </fileset> 
+       </classpath> 
+     </java>		  	 
+   </target> 
+   
+   <target name="startServerTest2" depends="dists"> 
+     <echo message="Launching Server test..." /> 
+     <java classname="domoNetWS.techManager.domoMLTCPManager.DomoMLTCPManagerServerTest2"
+       fork="true"> 
+       <classpath> 
+	 <fileset file="${dist}/domoNetClient-${DSTAMP}.jar" /> 
+         <fileset dir="${catalina_base_libs}"> 
+           <include name="*.jar" /> 
+         </fileset> 
+       </classpath> 
+     </java>		  	 
+   </target> 
+   -->
+   
+   <target name="stopServer"> 
+     <echo message="Shutting down web service..." /> 
+  	 <!-- For linux users... --> 
+     <exec executable="${catalina_home}/bin/shutdown.sh" os="Linux"/> 
+  	 <!-- For windows users... --> 
+     <exec executable="${catalina_home}/bin/shutdown.bat" osfamily="Windows"/> 
+   </target> 
+
+  <target name="launchDomoBrain"
+    depends="distDomoBrain, distCommon, distDomoML"> 
+    <echo message="Launching domoBrain..." /> 
+      <java classname="domobrain.gui.DomoBrainGUI" fork="true"> 
+        <classpath> 
+	  <fileset file="${dist}/domoBrain-${DSTAMP}.jar" /> 
+	  <fileset file="${dist}/common-${DSTAMP}.jar" /> 
+	  <fileset file="${dist}/domoML-${DSTAMP}.jar" /> 
+           <fileset dir="${swingDesigner}"> 
+              <include name="*.jar" /> 
+           </fileset>
+           <fileset dir="${axis_webapps_lib}"> 
+              <include name="*.jar" /> 
+           </fileset> 
+           <fileset dir="${axis_base}/lib"> 
+              <include name="*.jar" /> 
+           </fileset>
+           <fileset dir="${jschedule}"> 
+              <include name="*.jar" /> 
+           </fileset>
+           <fileset dir="${xerces_base}"> 
+              <include name="*.jar" /> 
+           </fileset>  
+        </classpath> 
+     </java>		  	 
+  </target>      
+
+  
+
+   <!-- LAUNCH DEMO SECTION --> 
+   <!--=====================--> 
+  <target name="demo" depends="install, dists"> 
+    <echo message="Current OS: ${os.name}" /> 
+    <echo message="Cleaning logs" /> 
+    <delete dir="${catalina_home}/logs" /> 
+    <mkdir dir="${catalina_home}/logs" /> 
+    <echo message="Starting up web service..." /> 
+  	 <!-- For linux users... --> 
+     <exec executable="${catalina_home}/bin/startup.sh" os="Linux"> 
+       <env key="CATALINA_BASE" value="${catalina_base}"/> 
+       <env key="CATALINA_HOME" value="${catalina_home}"/> 
+     </exec> 
+  	<!-- For windows users... --> 
+	<exec executable="${catalina_home}/bin/startup.bat" os="Windows XP"> 
+	  <env key="CATALINA_BASE" value="${catalina_base}"/> 
+	   <env key="CATALINA_HOME" value="${catalina_home}"/> 
+    </exec> 
+  	 
+	<echo message="Launching domoNetClientUI..." /> 
+	<java classname="domoNetClient.domoNetClientUI.DomoNetClientUI" fork="true"> 
+         <classpath> 
+	    <fileset file="${dist}/domoNetClient-${DSTAMP}.jar" /> 
+            <fileset dir="${catalina_base_libs}"> 
+               <include name="*.jar" /> 
+            </fileset> 
+         </classpath> 
+     </java>		  	 
+     <echo message="Shutting down web service..." /> 
+  	 <!-- For linux users... --> 
+     <exec executable="${catalina_home}/bin/shutdown.sh" os="Linux"/> 
+  	 <!-- For windows users... --> 
+     <exec executable="${catalina_home}/bin/shutdown.bat" os="Windows XP"/> 
+   </target> 
+ 
+   <target name="launchDomoNetClientUI" depends="install,dists"> 
+     <echo message="Launching domoNetClientUI..." /> 
+     <java classname="domoNetClient.domoNetClientUI.DomoNetClientUI"
+       fork="true"> 
+         <classpath> 
+	    <fileset file="${dist}/domoNetClient-${DSTAMP}.jar" /> 
+            <fileset dir="${catalina_base_libs}"> 
+               <include name="*.jar" /> 
+            </fileset> 
+         </classpath> 
+     </java>		  	 
+  </target> 
+ 
+</project> 

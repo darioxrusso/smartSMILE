@@ -1,0 +1,13 @@
+<device description="Temperatura-umidita 1" id="" manufacturer="Funnel I/O v2.0" position="" positionDescription="Laboratorio TTHF" serialNumber="brgw4aal.111.001" tech="DOMOML" type="XBee" url=""><service description="Humidity sensor [C]" name="SHT15-H1" output="INT" outputDescription="" prettyName="Umidita" /><service description="Temperature sensor [C]" name="SHT15-T1" output="INT" outputDescription="" prettyName="Temperatura" /><service description="Button" name="SW1-1" output="BOOLEAN" outputDescription="" prettyName="Bottone" /><service description="Battery" name="BAT1" output="INT" outputDescription="" prettyName="Stato batteria" /></device>
+
+<message message="brgw4aal.111.001" messageType="UPDATE" receiverId="" receiverURL="" senderId="" senderURL=""> <input name="SHT15-H1" type="INT" value="21" /></message>
+<message message="brgw4aal.111.001" messageType="UPDATE" receiverId="" receiverURL="" senderId="" senderURL=""> <input name="SHT15-T1" type="INT" value="22" /></message>
+<message message="brgw4aal.111.001" messageType="UPDATE" receiverId="" receiverURL="" senderId="" senderURL=""> <input name="SW1-1" type="INT" value="1" /></message>
+<message message="brgw4aal.111.001" messageType="UPDATE" receiverId="" receiverURL="" senderId="" senderURL=""> <input name="BAT1" type="BOOLEAN" value="1" /></message>
+
+<device description="Temperatura-umidita 2" id="" manufacturer="Funnel I/O v2.0" position="" positionDescription="Laboratorio TTHF" serialNumber="brgw4aal.111.002" tech="DOMOML" type="XBee" url=""><service description="Humidity sensor [C]" name="SHT15-H2" output="INT" outputDescription="" prettyName="Umidita" /><service description="Temperature sensor [C]" name="SHT15-T2" output="INT" outputDescription="" prettyName="Temperatura" /><service description="Button" name="SW1-2" output="BOOLEAN" outputDescription="" prettyName="Bottone" /><service description="Battery" name="BAT2" output="INT" outputDescription="" prettyName="Stato batteria" /></device>
+
+<message message="brgw4aal.111.002" messageType="UPDATE" receiverId="" receiverURL="" senderId="" senderURL=""> <input name="SHT15-H2" type="INT" value="21" /></message>
+<message message="brgw4aal.111.002" messageType="UPDATE" receiverId="" receiverURL="" senderId="" senderURL=""> <input name="SHT15-T2" type="INT" value="22" /></message>
+<message message="brgw4aal.111.002" messageType="UPDATE" receiverId="" receiverURL="" senderId="" senderURL=""> <input name="SW1-2" type="INT" value="23" /></message>
+<message message="brgw4aal.111.002" messageType="UPDATE" receiverId="" receiverURL="" senderId="" senderURL=""> <input name="BAT2" type="BOOLEAN" value="0" /></message>

@@ -1,0 +1,28 @@
+@c ----------------------------------------------------------------------------
+@c %**start of Conclusions
+@c ----------------------------------------------------------------------------
+
+@menu
+* Conclusions::         The conclusions
+@end menu
+
+@node Conclusions
+@chapter Conclusions
+
+@section Realizations experience and appraisals.
+The tests on the software executed to the Laboratory of Domotica near the Institute of Science and Technologies of Information ISTI ``Alexander Faedo'' of the CNR of Pisa, have demonstrated to the effectiveness and the generality of the engine of the software. The software has been in a position to importing all the devices  subordinates to the test correctly like dimmer, interrupts, televisions, washing machines and light bulbs.
+The side client successfully interact correctly with the devices subordinates, showing all the services available, constructing one corrected interface for everyone of them.
+For the cooperation, the crucial point is the location of the message that passes on the way of communication of the technology in object, the acknowledgment of the sender device (in order to find the corrispective) and the correspondent @keyWord{domoDevice} invoked service.
+
+For that it regards the developed technologies, these information always have been characterized and elaborated correctly therefore has been always possible to verify the presence of demands for cooperation and eventually to satisfy them. 
+
+@section Integration with Internet
+The model proposed is integrated perfectly with Internet as is a fondamental role of the protocols and the standard and open instruments of the net, like @keyWord{XML} and the @keyWord{web service}, play with its operations. Such instruments are used for the communications between the various architectural members and more just between @keyWord{domoNetClient} and @keyWord{domoNetWS} in order implementing the remote control and between various @keyWord{domoNetWSs} for the interoperability.
+Moreover, being the prototype relased under the terms of licence @keyWord{GNU} and leaning it as @keyWord{open source} software, it can be published and be distributed on the net without some tie.
+
+@section Future directions of research
+The domotic, now is still hindered from the attempt of every industry to impose this standard on others. The presence of an immense number of domotic standards indicates that difficultly there will be definitive consacration of one of them. The realized software represents a practicable solution that can guarantee the definitive affirmation of the domotic in a definitive way, with an architecture simple and clean and can resolve the obstacle placed. But occour still much job. In the first instance it is necessary to continue the development of the software. This only implements the base functionalities apt to demonstrate the effectiveness of the architecture introduced but far from being able to take advantage of all offered potentialities. Of smaller importance it does not cover the development of others @keyWord{techManager} so as to be able to widen the park of the supported technologies. The introduced software, moreover, represents only an example of application for the proposed architecture. Ulteriorly increasing the degree of generality of the architecture it is sure possible to find ulterior ambles of use where it is necessary one cooperation between various and incompatible devices and sensors.
+	
+@c ----------------------------------------------------------------------------
+@c %**end of Conclusions
+@c ----------------------------------------------------------------------------

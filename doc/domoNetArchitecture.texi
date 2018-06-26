@@ -1,0 +1,193 @@
+\input texinfo   @c -*-texinfo-*-
+@c This file is part of DOMONET.
+
+@c Copyright (C) 2006-2007 ISTI-CNR (Dario Russo, Vittorio Miori)
+
+@c NAUSEA is free software; you can redistribute it and/or modify
+@c it under the terms of the GNU General Public License as published by
+@c the Free Software Foundation; either version 2 of the License, or
+@c (at your option) any later version.
+
+@c NAUSEA is distributed in the hope that it will be useful,
+@c but WITHOUT ANY WARRANTY; without even the implied warranty of
+@c MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+@c GNU General Public License for more details.
+
+@c You should have received a copy of the GNU General Public License
+@c along with NAUSEA; if not, write to the Free Software
+@c Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA */
+@c See the file fdl.texi for copying conditions.
+
+@c ----------------------------------------------------------------------------
+@c %**start of header
+@c ----------------------------------------------------------------------------
+
+@setfilename domoNet.info
+@include version.texi
+@settitle DomoNet Architecture@value{EDITION}
+
+@c To do: when the current solution looks bad in Info, change @emph to
+@c @i and @strong to @b, and @code to @t.
+
+@c To do: replace @emph with @dfn where appropriate
+
+@include macros.texi
+
+@c ----------------------------------------------------------------------------
+@c %**end of header
+@c ----------------------------------------------------------------------------
+
+@c ----------------------------------------------------------------------------
+@c %**start of copying
+@c ----------------------------------------------------------------------------
+
+@copying
+This is the manual documenting DomoNet (version @value{VERSION})
+ @c,
+@c last updated on @value{UPDATED}).
+
+DomoNet is an application for manage domotic devices resolving the
+cooperation problem caused by the different standards existing in this
+world. It also provides a mechanism to manage devices of any technology
+in the distance.
+
+Copyright @copyright{} 2006 Dario Russo, Vittorio Miori
+
+@quotation
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being ``GNU General Public License'', with no
+Front-Cover texts and with the Back-Cover text being ``@emph{You have
+freedom to copy and modify this manual, like GNU software.}''.
+
+A copy of the license is included in the section entitled ``GNU Free
+Documentation License''. 
+@end quotation
+@end copying
+
+@c ----------------------------------------------------------------------------
+@c %**end of copying
+@c ----------------------------------------------------------------------------
+
+@c ----------------------------------------------------------------------------
+@c %**start of title
+@c ----------------------------------------------------------------------------
+
+@titlepage
+@title DomoNet Architecture
+@subtitle version @value{VERSION}
+ @c, @value{UPDATED}
+@author Dario Russo, Vittorio Miori
+
+@c The following two commands start the copyright page.
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@c ----------------------------------------------------------------------------
+@c %**stop of title
+@c ----------------------------------------------------------------------------
+
+@c ----------------------------------------------------------------------------
+@c %**start of contents
+@c ----------------------------------------------------------------------------
+
+@c Output the table of contents at the beginning.
+@contents
+
+@c If not generating TeX output, make this one the Top node and insert
+@c brief copying conditions:
+@ifnottex
+@node Top
+@top DomoNet Architecture
+
+@insertcopying
+@end ifnottex
+
+@c ----------------------------------------------------------------------------
+@c %**end of contents
+@c ----------------------------------------------------------------------------
+
+@c -----------------------------------------------------------------------------
+
+@cindex GNU General Public License
+@include gpl.texi
+@c -----------------------------------------------------------------------------
+
+@include introduction.texi
+
+@include domoML.texi
+
+@include serverSide.texi
+
+@include clientSide.texi
+
+@include development.texi
+
+@include conclusions.texi
+
+@c ----------------------------------------------------------------------------
+@c %**start of Appendices
+@c ----------------------------------------------------------------------------
+
+@menu
+ * Appendices::          Appendices	
+@end menu
+
+@node Appendices
+@unnumbered Appendices
+
+@menu
+ * Copying This Manual:: The GNU Free Documentation License
+@end menu
+
+@node Copying This Manual
+@appendix Copying This Manual
+
+ @menu
+ * GNU Free Documentation License::  License for copying this manual.
+@end menu
+
+@include fdl.texi
+
+@c ----------------------------------------------------------------------------
+@c %**end of Appendices
+@c ----------------------------------------------------------------------------
+
+@c ----------------------------------------------------------------------------
+@c %**start of Index
+@c ----------------------------------------------------------------------------
+
+@menu
+* Index::               Complete index
+@end menu
+
+@node Index
+@unnumbered Index
+
+@printindex cp
+
+@c ----------------------------------------------------------------------------
+@c %**end of Index
+@c ----------------------------------------------------------------------------
+
+@c ----------------------------------------------------------------------------
+@c %**start of Figures
+@c ----------------------------------------------------------------------------
+
+@menu
+* Figures::             The list of figures
+@end menu
+
+@node Figures
+@unnumbered Figures
+
+@listoffloats Figure
+
+@c ----------------------------------------------------------------------------
+@c %**end of Figures
+@c ----------------------------------------------------------------------------
+
+@bye

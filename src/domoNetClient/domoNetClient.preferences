@@ -1,0 +1,3 @@
+<properties>
+ <property name="updateSocketPort" value="7778" />
+</properties>

@@ -1,0 +1,8 @@
+@macro indicize{word}
+@cindex \word\
+@emph{\word\}
+@end macro
+
+@macro keyWord{word}
+@emph{\word\}
+@end macro

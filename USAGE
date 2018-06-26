@@ -1,0 +1,7 @@
+To compile the domoNet project, have javadoc and docs, type inside the
+domoNet directory, the command "ant". 
+
+To run a sample under linux, type: ant demo or launch "launch.sh" script.,
+modifying paths (lines from 2 to 8).
+
+

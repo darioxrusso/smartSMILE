@@ -1,0 +1,4 @@
+<properties> 
+ <property name="socket0" value="127.0.0.1:7778" />
+ <property name="socket1" value="91.231.179.42:7777" />
+</properties>

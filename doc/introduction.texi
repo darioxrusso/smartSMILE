@@ -1,0 +1,219 @@
+@c ----------------------------------------------------------------------------
+@c %**start of the Introduction
+@c ----------------------------------------------------------------------------
+
+@menu
+* Introduction::        What domotic is and what domoNet tries to solve
+@end menu
+
+@node Introduction
+@chapter Introduction
+
+The document presents the results obtained during my collaboration
+with the Domotic Laboratory at the Institute of Science and Technologies of
+Information ISTI ``Alessandro Faedo'' of the CNR in Pisa. This project is located 
+within the ``Home Automation Technologies and Standards'' 
+(@indicize{HATS}@footnote{http://hats.isti.cnr.it}) research area. 
+The project purpose is to develop an architecture based on new technologies
+to create intelligent domestic atmospheres that concur at the integration and
+interoperability of the offered services.
+
+@section The problem
+
+The slang of new technologies has gone enriching of new terms as
+@indicize{Home Automation}, @indicize{Building Automation}, @indicize{Smart Home}.
+They are all synonyms diverted by the @indicize{domotique} neologism.
+The @indicize{domotique} neologism was coined in
+France and it is composed by the fusion of two terms: @indicize{domus} and
+@indicize{informatique}.
+The @indicize{domotique} neologism is recovered in Italy with the
+@indicize{domotica} term and represents
+the technology applications of the information and communication in the
+domestic world, to improve the comfort and the control.
+
+Domotics parnorama is still in development. The industry and the market has
+played (and they still play) a role of primary importance for the definitive
+take-off of the domotic technologies. Different industry coalitions have 
+promoted numerous middlewares and standards 
+always more sophisticated and always too poorly interoperable each others
+This has made the domotics an unexploded bomb.
+The world of research and industry are waiting for the that ``boom`` that is not
+still happened. The real employment of the domotic technology is
+still hindered by the attempt of each industry to impose its standard on the
+others. The presence of a so vast number of domotic standards announces that
+hardly will be
+the definitive consecration of one of them.
+It is as much unlikely that all the coalitions gather about to
+realize an unique middleware that represents the standard @keyWord{de facto}
+for the domotics.
+
+Pervasive Computing and Ambient Intelligence (AmI) visions are still far from being achieved, especially with regard to Domotics and home applications. According to the vision of Ambient Intelligence (AmI), the most advanced technologies are those that disappear: at maturity, computer technology should become invisible. All the objects surrounding us must possess sufficient computing capacity to interact with users, the surroundings and each other. The entire physical environment in which users are immersed should thus be a hidden computer system equipped with the appropriate software in order to exhibit intelligent behaviour. Even though many implementations have started to appear in several contexts, few applications have been made available for the home environment and the general public. 
+
+My proposal is to realize a practicable solution that is able to guarantee the
+definitive affirmation of the domotics. My solution consists in the realization 
+of a @keyWord{framework} based on the standard technology of @keyWord{web service},
+and on an XML grammar called @indicize{domoML}.
+The goal proposed by the @keyWord{framework} is the integration and to act a sort of
+interoperability among services offered by the main middlewares currently available.
+
+@section The domotics
+The domotics constitutes all the technologies that are dedicated at the
+integration of electronic devices, appliances, systems of communication and
+control placed inside a domestic environment.
+The purposes that the domotic applications establish are:
+
+@itemize @bullet
+
+@item the increase of the level of comfort: 
+domotic applications must offer a more pleasant space in the house
+facilitating its management especially for disabled and diseased consumers (for example,
+controlling audio/video, monitoring and activating remote appliances, shine,
+blinds, gates, etc.);
+
+@item the attainment of a suitable safety level:
+the domotic applications have to guarantee the safety of the consumer to front
+situations of emergency (for example, anti-intrusion techniques, the raise 
+of fires, the escape of gas, etc.);
+
+@item the search of techniques for the energetic saving:
+the employment of the domotics has to allow a more accurate and
+efficient management on the level of the energetic consumptions (for example, advanced
+tools to get information that allow a more equitable distribution of the
+energetic loads).
+
+@end itemize
+
+It's sure that the domotics proposes futuristic and positive
+impact sceneries on the quality of our life.
+Unfortunately there are numerous technologies and different domotic standards
+that are poorly interoperable among them.
+This incompatibility represents an obstacle to
+the expansion of the market.
+From the point of view of the final consumer it's very complicated and
+perhaps even little comprehensible perceive the necessity to buy
+domotic technologies instead of traditional devices.
+In fact the potential beneficents that would divert from the acquisition of
+this products doesn't succeed to justify an economic greater effort: the
+introduction of "intelligence", understood as ability of calculation, in an any
+device, involve additional costs always more small.
+Besides, on account of the scarce interoperability among various standards,
+the consumer is forced to acquire only the conforming products to a particular
+system and it could happen in two conditions: the contemporary acquisition of
+all the devices, or a technical knowledge that allow the user to knowledge the
+previously used standard in order to acquire further conforming devices.
+Both the conditions are however of difficult realization because in the most of
+the cases. In particular, as regard the first condition It must be considered
+that the domestic environment is very dynamic: the home elements change
+frequently and the devices come acquired in different moments.
+It is in fact rare that all that devices in a residence are acquired
+contemporary. To understand the interoperability issue, let's suppose to have
+a coffee pot that is able to turn on itself through a radio alarm to a
+pre-established hour. If the radio alarm and the coffee pot "speak the same
+tongue" (have the same standard), every morning it will be possible have a
+ready coffee just wake. If one of the two devices must be changed, it will be
+necessary to replace appliance with an other of the same standard.
+It is instead desirable to allow the consumer to choose the devices
+independently from the standard which they belong: in this way the final user
+doesn’t have to know the technical detailed knowledge of the installed system
+inside his home. His only attention should be to exclusively take advantage of
+all the possible benefits offered by the devices. 
+
+
+@subsection @emph{Domotic middlewares}
+Domotic middlewares can be divided in two great classes that differ
+substantially for the system of communication used:
+
+@itemize @bullet
+@item bus systems: more traditional and consolidated in the domoticWorld.
+There are standards as X10, EIB, BatiBus, EHS, Konnex, LonWorks, CEBus;
+@item protocolos more evolved as TCP/IP: more recent as UPnP, Jini, OSGi.
+@end itemize
+
+To the side of a particular system of communication, is available a number
+always greater of standards that realise transmissions as IEEE 802.11b
+(Wi-penalties), Bluetooth, IEEE 1394 (Firewire), IrDA, ZigBee, etc.
+
+@section The solution: @emph{DomoNet}
+
+One of the main objective of the work is to study and to implement an 
+architecture to face the issue of the cooperation among heterogeneous 
+devices from the technological point of view. 
+This is possible creating a level of abstraction that allows to 
+characterize the domotic devices from a behavioural and physical point 
+of view. 
+The abstraction layer aims to furnish a homogeneous description of all devices 
+independently from the belonging technologies. 
+  
+The @indicize{domoNet architecture} is composed by a server part that 
+implements the management of domotic devices like the abstraction layer 
+and the cooperation feature, and by one or more clients able to send requests 
+to the server in order to activate domotic actuators and to query domotic 
+sensors receiving a response from them. 
+Client functioning can range from a simple remote control to a more 
+sophisticated tool able to take decisions by evaluating contextual and 
+environmental parameters to implement intelligent and specialized services 
+(e.g. related to Ambient Intelligence, e-health, energy saving). 
+
+@float Figure,fig:ex1
+
+@center @image{images/domoNetArchitecture,400pt,,,jpg}
+
+@caption{The domoNet architecture}
+@end float
+
+In @ref{fig:ex1} the client is composed by two elements: the 
+@indicize{domoNet Client} that implements the business logic and the methods 
+for interactions with the sever part and the 
+@indicize{domoNet Client User Interface} that implements the user interface 
+like a Web or desktop application, an app for the smartphone and so on. 
+The server part is composed by the communication interfaces and business logic 
+(webService) and by one or more @keyWord{techManager}.
+@keyWord{techManager}s are special gateway able to interface domotic 
+technologies (such as @indicize{KNX},
+@indicize{UPnP}, @indicize{X10} @indicize{ZigBee} and so on) and to integrate
+them in the middleware. 
+
+@section Dictionary
+
+@itemize @bullet
+
+@item @indicize{device}: domotic physical device belonging to a specific technology. 
+
+@item @indicize{domoAddress}:
+a couple composed by the @keyWord{URL} of the @keyWord{web service} that manages the
+@keyWord{domoDevice} and an @keyWord{id} that identify the @keyWord{domoDevice} inside
+the middleware.
+ 
+@item @indicize{domoDevice}: a @keyWord{domoNet} device described using @keyWord{domoML} language.
+
+@item @indicize{domoMessage}: an interaction described using @keyWord{domoML} formalism.
+
+@item @indicize{domoML}: high level @indicize{XML} based language used to
+describe and to abstract devices, functions and interactions inside the @indicize{domoNet} middleware.
+
+@item @indicize{real address}:
+the address of the device that is used inside the technology of the domotic device.
+
+@item @indicize{service}: a service (or function) offered by a @keyWord{device} and described using @keyWord{domoML} language.
+
+@item @indicize{techLanguage}: each domotic technology is represented and interfaced using an appropriate @indicize{techManager}. @indicize{TechLanguage} is the language that devices belonging to a specific domotic technology use and that is used in the @indicize{techManager} to communicate with its belonging @keyWord{device}s. 
+
+@end itemize
+
+@section How to install, compile and launch the application
+
+@c ----------------------------------------------------------------------------
+@c %**including INSTALL file
+@c ----------------------------------------------------------------------------
+
+@include INSTALL
+
+@c ----------------------------------------------------------------------------
+@c %**including USAGE file
+@c ----------------------------------------------------------------------------
+ 
+@include USAGE
+
+@c ----------------------------------------------------------------------------
+@c %**end of Introduction
+@c ----------------------------------------------------------------------------
